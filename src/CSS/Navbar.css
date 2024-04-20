@@ -13,7 +13,7 @@
 
 
 .nav-link {
-    color: #44435f !important;
+    color: whitesmoke !important;
     position: relative;
     text-decoration: none;
     padding-bottom: 2px;
@@ -51,7 +51,7 @@
 }
 
 #navbarSupportedContent {
-    background-color: #ade8f4 !important;
+    background-color: #1a759f !important;
 }
 
 .nav-bar-container {
@@ -62,9 +62,15 @@
 .navbar-nav a {
     font-size: 18px !important;
     font-weight: 600 !important;
-    background-color: #ade8f4 !important;
+    background-color: #1a759f !important;
 }
 
 .navbar-nav {
-    background-color: #ade8f4 !important;
+    background-color: #1a759f !important;
+}
+
+@media (max-width:766px) {
+    .navbar-hidden {
+        max-height: 10%;
+    }
 }

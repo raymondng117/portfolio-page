@@ -31,6 +31,15 @@ margin-bottom: 2px;
 cursor: default !important;
 }
 
+.btn-about div {
+    background-color: transparent;
+}
+
+.btn-about div img,
+.btn-about div p {
+    background-color: transparent;
+}
+
 @media (max-width: 768px) {
     .about-thumbnail {
         display: block;
