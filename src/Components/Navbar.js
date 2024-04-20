@@ -3,19 +3,23 @@ import { Link } from "react-router-dom";
 import '../CSS/Navbar.css'
 
 const Navbar = () => {
-    const [navbarShowing, setNavBarShowing] = useState(false);
-
-    const handleMouseOutFromNav = () => {
-            setNavBarShowing (false);
-    }
+    const [navbarVisible, setNavbarVisible] = useState(false);
 
     const handleMouseEnterNav = () => {
-        setNavBarShowing (true);
+        setNavbarVisible(true);
     }
- 
+
+    const handleMouseLeaveNav = () => {
+        setNavbarVisible(false);
+    }
+
     return (
-        <div className="nav-bar-container" onMouseEnter={handleMouseEnterNav}>
-            { navbarShowing && <nav className="navbar navbar-expand-lg navbar-light sticky-top"  onMouseOut={handleMouseOutFromNav} onMouseOver={handleMouseEnterNav} >
+        <div
+            className={`nav-bar-container ${navbarVisible ? 'navbar-visible' : 'navbar-hidden'}`}
+            onMouseEnter={handleMouseEnterNav}
+            onMouseLeave={handleMouseLeaveNav}
+        >
+            <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`}  style={{ backgroundColor: '#ade8f4' }} >
                 <div className="container-fluid" style={{ backgroundColor: '#ade8f4' }} >
                     {/* Brand */}
                     <Link className="navbar-brand " to="/">
@@ -36,7 +40,7 @@ const Navbar = () => {
                     </button>
 
                     {/* Links */}
-                    <div className="collapse navbar-collapse"  id="navbarSupportedContent">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
                                 <Link to="/home" className="nav-link">
@@ -67,7 +71,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                 </div>
-            </nav>}
+            </nav>
         </div>
     );
 };
