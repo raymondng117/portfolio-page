@@ -96,6 +96,8 @@ const Home = () => {
       <div className={`arrow-column d-flex col-sm-5  col-12 col-md-1 justify-content-center align-items-center text-center ${moved ? 'moved' : ''}`} onClick={moveArrowColumn}>
         <HiOutlinePaperAirplane className='arrow-img' />
       </div>
+
+      <div className='blank-column-bg col-md-1'></div>
     </div>
   );
 }

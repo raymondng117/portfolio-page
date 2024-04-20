@@ -22,6 +22,7 @@
 .arrow-img {
     width: 40px;
     height: 40px;
+    background-color: #0077b6;
     border: none !important;
     animation: moveBackAndForth 0.5s infinite alternate;
 }
@@ -57,4 +58,8 @@
 
 .moved {
     animation: moveRight 1s forwards;
+}
+
+.blank-column-bg {
+    background-color: #ffffff;
 }

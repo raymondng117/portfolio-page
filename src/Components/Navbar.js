@@ -15,8 +15,8 @@ const Navbar = () => {
  
     return (
         <div className="nav-bar-container" onMouseEnter={handleMouseEnterNav}>
-            {navbarShowing && <nav className="navbar navbar-expand-lg navbar-light sticky-top"  onMouseOut={handleMouseOutFromNav} onMouseOver={handleMouseEnterNav} >
-                <div className="container-fluid" >
+            { navbarShowing && <nav className="navbar navbar-expand-lg navbar-light sticky-top"  onMouseOut={handleMouseOutFromNav} onMouseOver={handleMouseEnterNav} >
+                <div className="container-fluid" style={{ backgroundColor: '#ade8f4' }} >
                     {/* Brand */}
                     <Link className="navbar-brand " to="/">
                         <img className="icon-logo me-3" src={process.env.PUBLIC_URL + "/images/logo.jpg"} alt="logo" />

@@ -1,3 +1,12 @@
+.outside-container {
+    background-color: #1B3040;
+    height: 100vh;
+}
+
+.main-container{
+    background-color: #1B3040;
+}
+
 .about-thumbnail-column {
     max-height: 70% !important;
 }
@@ -8,10 +17,18 @@
 
 .about-content-column {
     height: 100% !important;
+    background-color: #1B3040;
+    height: 100vh;
 }
 
 .about-thumbnail {
     display: block;
+}
+
+.btn-about {
+margin-top: 2px;
+margin-bottom: 2px;
+cursor: default !important;
 }
 
 @media (max-width: 768px) {
