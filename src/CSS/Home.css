@@ -1,0 +1,60 @@
+.content-container {
+    padding: 0% !important;
+}
+
+.arrow-column-bg {
+    background-color: #0077b6;
+}
+
+.home-page-bg {
+    background-color: #1B3040;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.home-container {
+    width: 60%;
+}
+
+.arrow-img {
+    width: 40px;
+    height: 40px;
+    border: none !important;
+    animation: moveBackAndForth 0.5s infinite alternate;
+}
+
+@keyframes moveBackAndForth {
+    from {
+      transform: translateX(-30px);
+    }
+    to {
+      transform: translateX(10px); /* Adjust the distance of movement as needed */
+    }
+  }
+
+.arrow-column {
+    background-color: #0077b6;
+    left: 85%;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 100vh;
+    position: absolute;
+}
+
+@keyframes moveRight {
+    from {
+        left: 85%;
+    }
+
+    to {
+        left: 92.5%;
+    }
+}
+
+.moved {
+    animation: moveRight 1s forwards;
+}

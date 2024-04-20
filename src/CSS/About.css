@@ -1,0 +1,23 @@
+.about-thumbnail-column {
+    max-height: 70% !important;
+}
+
+.profile-contact-column {
+    height: 100% !important;
+}
+
+.about-content-column {
+    height: 100% !important;
+}
+
+.about-thumbnail {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .about-thumbnail {
+        display: block;
+        width: 50%;
+        height: 50%;
+    }
+}
