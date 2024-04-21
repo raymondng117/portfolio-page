@@ -1,6 +1,7 @@
 .outside-container {
     background-color: #1B3040;
-    height: 100vh;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    overflow: hidden;
 }
 
 .main-container{
@@ -47,3 +48,39 @@ cursor: default !important;
         height: 50%;
     }
 }
+
+.wave {
+    width: 1400px;
+    height: 1200px;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 300px;
+    border-radius: 35%;
+    background: #accbee;
+    opacity: 0.2;
+    animation: wave 15s infinite linear;
+  }
+  
+  @keyframes wave {
+    from { transform: rotate(0deg);}
+    from { transform: rotate(360deg);}
+  }
+
+  @media (max-width:768px) {
+    .wave {
+        width: 1200px;
+        height: 1000px;
+        position: absolute;
+        top: 5%;
+        left: 80%;
+        margin-left: -200px;
+        margin-top: 300px;
+        border-radius: 35%;
+        background: #accbee;
+        opacity: 0.2;
+        animation: wave 15s infinite linear;
+    }
+  }
+
