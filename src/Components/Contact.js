@@ -130,7 +130,7 @@ const Contact = () => {
             <form id="contactform" onSubmit={send}>
                 {isSending && !anim && (
                     <div id="update">
-                        <p>Your message is on it's way!</p>
+                        <p>Your message is on it's way! Will reply soon! :D</p>
                         <button id="btn" onClick={reverseAnim}>
                             Send another
                         </button>
