@@ -1,53 +1,198 @@
+import React, { useState } from "react";
+import anime from "animejs/lib/anime.es.js";
+import '../CSS/Contact.css';
+
 const Contact = () => {
+    const [isSending, setIsSending] = useState(false);
+    const [anim, setAnim] = useState(false);
+
+    const validateForm = (toggle) => {
+        if (!anim && !isSending) {
+            toggle
+                ? anime({
+                    targets: ["#rectwrap rect"],
+                    strokeDashoffset: [anime.setDashoffset, 0],
+                    opacity: [{ value: 1, duration: 50 }],
+                    easing: "easeOutQuad",
+                    duration: 650,
+                })
+                : anime({
+                    targets: ["#rectwrap rect"],
+                    strokeDashoffset: [0, anime.setDashoffset],
+                    easing: "easeOutQuad",
+                    duration: 700,
+                });
+        }
+    };
+
+    const timeline = () => {
+        const moo = () => {
+            setAnim(false);
+        };
+        let tl = anime.timeline({
+            easing: "easeInOutSine",
+            changeComplete: function () {
+                moo();
+            },
+        });
+        tl.add({
+            targets: ".inp",
+            translateX: "100%",
+            opacity: [1, 0],
+            easing: "easeInOutSine",
+            duration: 350,
+            delay: (el, i) => 150 * i,
+        })
+            .add({
+                targets: "#submit",
+                outlineWidth: "0px",
+                duration: 0,
+                easing: "easeInOutSine",
+            })
+            .add({
+                targets: ["#rectwrap rect"],
+                opacity: 0,
+                easing: "easeOutQuad",
+                duration: 100,
+            })
+            .add({
+                targets: ".siz",
+                translateY: "60px",
+                duration: 250,
+            })
+            .add({
+                targets: ".siz",
+                translateY: "-600px",
+                easing: "easeInQuad",
+                duration: 500,
+            })
+            .add({
+                targets: ".siz",
+                opacity: [1, 0],
+                duration: 200,
+            });
+    };
+
+    const reverseAnim = () => {
+        const moo = () => {
+            setAnim(false);
+        };
+        setIsSending(false);
+        setAnim(true);
+        let tl = anime.timeline({
+            easing: "easeInOutSine",
+            changeComplete: function () {
+                moo();
+            },
+        });
+        tl.add({
+            targets: ".inp",
+            translateX: "0%",
+            opacity: [0, 1],
+            easing: "easeInOutSine",
+            duration: 350,
+            delay: (el, i) => 150 * i,
+        })
+            .add({
+                targets: ".siz",
+                translateY: "0%",
+                translateX: "0%",
+                duration: 0,
+            })
+            .add({
+                targets: "#submit",
+                outlineWidth: "1px",
+                duration: 300,
+                easing: "easeInOutSine",
+            })
+            .add({
+                targets: ".siz",
+                opacity: [0, 1],
+                duration: 300,
+            })
+            .add({
+                targets: ["#rectwrap rect"],
+                opacity: [0],
+                strokeDashoffset: [0],
+                duration: 100,
+            });
+    };
+
+    const send = (e) => {
+        e.preventDefault();
+        setIsSending(true);
+        setAnim(true);
+        timeline();
+    };
+
     return (
-        <div className="container">
-            <div className="row justify-content-between">
-
-                <div className="col-md-8 mt-5 text-center justify-content-end">
-                    <div className="display-6 fw-bold mb-5">
-                        If you're ever interested in getting in touch, please don't hesitate to reach out!
+        <div className="contact-container">
+            <form id="contactform" onSubmit={send}>
+                {isSending && !anim && (
+                    <div id="update">
+                        <p>Your message is on it's way!</p>
+                        <button id="btn" onClick={reverseAnim}>
+                            Send another
+                        </button>
                     </div>
+                )}
+                <h1  className="inp fs-3 mb-4 fw-bolder">Feel free to reach out!!</h1>
+                <input className="inp" type="text" placeholder="Name" />
+                <input className="inp" type="text" placeholder="Email" />
+                <textarea className="inp" placeholder="Message" />
 
-                    <div className="d-flex align-content-center  justify-content-center">
-                        <div>
-                            <img width="48" height="48" src="https://img.icons8.com/emoji/48/backhand-index-pointing-right-light-skin-tone.png" alt="backhand-index-pointing-right-light-skin-tone" className="me-5 animated-left-right-hand d-none d-sm-block" />
-                        </div>
-
-                        <div>
-                            <a href="mailto:ngyuwing117@gmail.com" className="email display-6 text-decoration-none">ngyuwing117@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div className='mt-5 d-flex justify-content-center'>
-                        <a className="icon" href="https://www.linkedin.com/in/yu-wing-ng-75a84a205/">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
-                            </svg>
-                        </a>
-
-                        <a className="icon" href="https://www.facebook.com/ng.yuwing">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                class="bi bi-facebook"
-                                viewBox="0 0 16 16"
+                <button
+                    id="submit"
+                    type="submit"
+                    onMouseEnter={() => validateForm(true)}
+                    onMouseLeave={() => validateForm(false)}
+                >
+                    <svg width="100%" height="100%" id="rectwrap">
+                        <defs>
+                            <linearGradient
+                                id="linear-gradient"
+                                x1="0%"
+                                y1="0%"
+                                x2="100%"
+                                y2="0%"
                             >
-                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                            </svg>
-                        </a>
+                                <stop offset="0%" stopColor="#00fdff" stopOpacity="1" />
+                                <stop offset="100%" stopColor="#f093fb" stopOpacity="1" />
+                            </linearGradient>
+                        </defs>
+                        <rect
+                            width="100%"
+                            height="100%"
+                            fill="none"
+                            strokeWidth="3"
+                            stroke="url(#linear-gradient)"
+                            strokeDasharray="5000"
+                            strokeDashoffset="5000"
+                        />
+                    </svg>
+
+                    <div className="siz" style={{ transform: 'translateY(0%) translateX(0%)', opacity: 1 }}>
+                        <svg
+                            id="Capa_1"
+                            height="30"
+                            viewBox="0 0 512.056 512.056"
+                            width="30"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="#fff"
+                        >
+                            <path d="m350.038 120.265c-7.206-36.687-27.738-70.157-57.939-92.992l-36.071-27.273-36.071 27.272c-30.201 22.835-50.733 56.305-57.939 92.992h188.02z" />
+                            <path d="m394.777 252.144v151.096h77.609v-69.027z" />
+                            <path d="m337.633 221.387c-11.732 0-21.277 9.545-21.277 21.278v145.279h48.422v-145.279c0-11.732-9.545-21.278-21.277-21.278z" />
+                            <path d="m195.701 242.665c0-11.732-9.545-21.278-21.277-21.278h-5.867c-11.732 0-21.277 9.545-21.277 21.278v145.279h48.422v-145.279z" />
+                            <path d="m117.279 252.144-77.609 82.069v69.027h77.609z" />
+                            <path d="m286.355 417.944v-175.279c0-28.275 23.003-51.278 51.277-51.278h5.867c3.213 0 6.353.311 9.403.879v-42.001h-193.75v42.001c3.051-.568 6.19-.879 9.403-.879h5.867c28.274 0 51.277 23.003 51.277 51.278v175.279h-54.474c-2.706 12.642-2.828 26.509 3.811 38.389l4.293 7.683h25.264c5.605 13.589 18.466 35.112 45.957 45.893l5.477 2.148 5.477-2.148c27.491-10.781 40.352-32.303 45.957-45.893h25.264l4.294-7.683c6.638-11.88 6.516-25.747 3.81-38.389z" />
+                        </svg>
                     </div>
-
-                </div>
-
-                <div className="col-md-3 ms-2 mt-5 d-md-block d-none ">
-                    <img className='img-fluid home-img-1' src={process.env.PUBLIC_URL + "/images/home char.png"} alt="" />
-                </div>
-
-
-            </div>
-
+                </button>
+            </form>
         </div>
+
     );
-}
+};
 
 export default Contact;

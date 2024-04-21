@@ -74,7 +74,7 @@ const Home = () => {
 
 
   return (
-    <div className='d-flex col-12 flex-sm-row flex-column content-container'>
+    <div className='d-flex col-12 flex-md-row flex-column content-container'>
       <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
         <div className="container">
           <div className="row">

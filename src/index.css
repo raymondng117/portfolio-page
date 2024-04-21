@@ -113,19 +113,21 @@ ul {
 
 .animated-left-right-hand {
     animation: moveLeftAndRight 1s linear infinite;
-  }
+}
 
 @keyframes moveLeftAndRight {
     0% {
-      transform: translateX(0); 
+        transform: translateX(0);
     }
+
     50% {
-      transform: translateX(50px); 
+        transform: translateX(50px);
     }
+
     100% {
-      transform: translateX(0); 
+        transform: translateX(0);
     }
-  }
+}
 
 .project-links {
     width: 40% !important;

@@ -51,7 +51,7 @@
 }
 
 #navbarSupportedContent {
-    background-color: #1a759f !important;
+    background-color: #028090 !important;
 }
 
 .nav-bar-container {
@@ -62,11 +62,11 @@
 .navbar-nav a {
     font-size: 18px !important;
     font-weight: 600 !important;
-    background-color: #1a759f !important;
+    background-color: #028090 !important;
 }
 
 .navbar-nav {
-    background-color: #1a759f !important;
+    background-color: #028090 !important;
 }
 
 @media (max-width:766px) {
