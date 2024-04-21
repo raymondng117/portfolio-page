@@ -103,6 +103,7 @@
       position: absolute;
       left: 0;
       width: 100%;
+      height: 80%;
       padding: 2rem;
       -webkit-box-sizing: border-box;
               box-sizing: border-box;
@@ -163,15 +164,15 @@
   
   .front .inner span{
     background-color: transparent !important;
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
     font-size:medium;
-    font-weight: 100;
+    font-weight:bold;
   }
 
   .back .inner p {
     background-color: transparent !important;
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size:medium;
+    margin-bottom: 1rem;
     position: relative;
   }
 
