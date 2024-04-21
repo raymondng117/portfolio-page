@@ -1,10 +1,14 @@
+.body {
+    background-color: #1B3040;
+}
+
 .outside-container {
     background-color: #1B3040;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
     overflow: hidden;
 }
 
-.main-container{
+.main-container {
     background-color: #1B3040;
 }
 
@@ -27,9 +31,9 @@
 }
 
 .btn-about {
-margin-top: 2px;
-margin-bottom: 2px;
-cursor: default !important;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    cursor: default !important;
 }
 
 .btn-about div {
@@ -61,14 +65,19 @@ cursor: default !important;
     background: #accbee;
     opacity: 0.2;
     animation: wave 15s infinite linear;
-  }
-  
-  @keyframes wave {
-    from { transform: rotate(0deg);}
-    from { transform: rotate(360deg);}
-  }
+}
 
-  @media (max-width:768px) {
+@keyframes wave {
+    from {
+        transform: rotate(0deg);
+    }
+
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width:768px) {
     .wave {
         width: 1200px;
         height: 1000px;
@@ -82,5 +91,13 @@ cursor: default !important;
         opacity: 0.2;
         animation: wave 15s infinite linear;
     }
-  }
+}
 
+.about-p {
+    line-height: 2 !important;
+}
+
+.btn-about {
+    font-weight: 700 !important;
+    border-width: 3px;
+}

@@ -1,31 +1,14 @@
 * {
     font-family: monospace, 'Courier New', Courier;
     color: whitesmoke;
-    background-color: #1B3040;
 }
 
-
+body {
+    background-color: #1B3040; /* This will be applied to all pages */
+}
 
 .hr {
     width: 90% !important;
-}
-
-.card {
-    border-width: 4px !important;
-    border-radius: 10px !important;
-    box-shadow: 7px 7px 3px;
-}
-
-.card-image {
-    border: lightgray solid !important;
-    margin: 4px;
-    border-radius: 2px !important;
-    border-width: 2px !important;
-    min-height: 150px;
-}
-
-.card-text {
-    font-size: 12px !important;
 }
 
 .icon {
@@ -61,12 +44,6 @@ h5 {
     margin: 5px 0;
 }
 
-ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-
 
 .resume-section ul {
     list-style: none;
@@ -82,7 +59,6 @@ ul {
 }
 
 
-
 .fa-brands {
     color: #282839 !important;
 }
@@ -93,54 +69,12 @@ ul {
 
 
 
-.about-p {
-    line-height: 2 !important;
-}
-
-.btn-about {
-    font-weight: 700 !important;
-    border-width: 3px;
-}
-
-.motto {
-    font-family: Courier !important;
-}
-
-.email {
-    color: #8e8e9f !important;
-}
 
 
-.animated-left-right-hand {
-    animation: moveLeftAndRight 1s linear infinite;
-}
 
-@keyframes moveLeftAndRight {
-    0% {
-        transform: translateX(0);
-    }
 
-    50% {
-        transform: translateX(50px);
-    }
 
-    100% {
-        transform: translateX(0);
-    }
-}
 
-.project-links {
-    width: 40% !important;
-}
 
-.card {
-    min-height: 550px !important;
-}
 
-.card-title {
-    color: #44435f !important;
-}
 
-.card-subtitle {
-    font-style: italic;
-}
