@@ -25,6 +25,28 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/pomodoroclock"
     },
 
+    // IntrovertCopilot
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/Introvertcopilot.JPG',
+        backImage: "https://unsplash.it/511/511/",
+        title: "IntroCopilot",
+        technologies: "[OpenAi API, Express.js, Bootstrap]",
+        description: "This App creates a web application where users for now can customize own battle team for the adventure.",
+        liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
+        fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
+    },
+
+    // FlipCards
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/filpcards.JPG',
+        backImage: "https://unsplash.it/511/511/",
+        title: "Flip Cards",
+        technologies: "[React.js, Bootstrap]",
+        description: "This App creates a page where users under same router can have consistent live chat with each other.",
+        liveDemoLink: "https://raymondng117.github.io/flipcards",
+        fullCodesLink: "https://github.com/raymondng117/flipcards"
+    },
+
     // Wanderland RPG 
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/wanderland.JPG',
@@ -34,6 +56,17 @@ const programmingCodingCardData = [
         description: "This App creates a web application where users for now can customize own battle team for the adventure.",
         liveDemoLink: "https://raymondng117.github.io/wanderlandRPG/",
         fullCodesLink: "https://github.com/raymondng117/wanderlandRPG"
+    },
+    
+    // calcualtor
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/calculator.JPG',
+        backImage: "https://unsplash.it/511/511/",
+        title: "Calculator",
+        technologies: "[React.js, Bootstrap]",
+        description: "This application employs typical React functionalities like useState and useEffect to handle complex chained calculations and negative number computations and bootstrap.",
+        liveDemoLink: "https://raymondng117.github.io/freeCodeCamp_calculator/",
+        fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
     },
 
     // ChatHub
@@ -47,16 +80,7 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/liveChat"
     },
 
-    // calcualtor
-    {
-        frontImage: process.env.PUBLIC_URL + '/images/project-previews/calculator.JPG',
-        backImage: "https://unsplash.it/511/511/",
-        title: "Calculator",
-        technologies: "[React.js, Bootstrap]",
-        description: "This application employs typical React functionalities like useState and useEffect to handle complex chained calculations and negative number computations and bootstrap.",
-        liveDemoLink: "https://raymondng117.github.io/freeCodeCamp_calculator/",
-        fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
-    },
+    // Calculator QA
     {
         frontImage: "https://th.bing.com/th/id/OIG.ZfGCQKu.EA8xp904z4KP?pid=ImgGn",
         backImage: "https://unsplash.it/511/511/",
@@ -66,6 +90,8 @@ const programmingCodingCardData = [
         liveDemoLink: null,
         fullCodesLink: "https://github.com/raymondng117/onlineCalculatorTesting"
     },
+
+    // API Random Quotes
     {
         frontImage: "https://th.bing.com/th/id/OIG.rmAGNkjypW7JBXj6epXG?pid=ImgGn",
         backImage: "https://unsplash.it/511/511/",
@@ -75,15 +101,8 @@ const programmingCodingCardData = [
         liveDemoLink: "https://raymondng117.github.io/randomQuotes/",
         fullCodesLink: "https://github.com/raymondng117/randomQuotes"
     },
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.mbNvkEtlS.LFPB4C8Pvg?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
-        title: "IntrovertCopilot",
-        technologies: "[ChatGPT API, Express.js, jQuery, localStroage]",
-        description: "This app create a website for introverts to learn conversations skills and gain proposed conversations.",
-        liveDemoLink: null,
-        fullCodesLink: "https://github.com/tiffahahahu7/IntrovertCopilot.git"
-    },
+
+    // APOD search
     {
         frontImage: "https://th.bing.com/th/id/OIG.xdLdg5rky0lbwHFInpkJ?pid=ImgGn",
         backImage: "https://unsplash.it/511/511/",
@@ -93,6 +112,8 @@ const programmingCodingCardData = [
         liveDemoLink: null,
         fullCodesLink: "https://github.com/raymondng117/liveChat"
     },
+
+    // Course Registration
     {
         frontImage: "https://th.bing.com/th/id/OIG.6MDhT.IxnRmSvcxdkkCw?pid=ImgGn",
         backImage: "https://unsplash.it/511/511/",
