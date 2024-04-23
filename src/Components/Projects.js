@@ -69,28 +69,6 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
     },
 
-    // ChatHub
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.2W_p46W042h7V0BFZeoa?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
-        title: "ChatHub",
-        technologies: "[Express.js, React.js, Socket.io, mongoDB, Bootstrap]",
-        description: "This App creates a page where users under same router can have consistent live chat with each other.",
-        liveDemoLink: "https://github.com/raymondng117/liveChat",
-        fullCodesLink: "https://github.com/raymondng117/liveChat"
-    },
-
-    // Calculator QA
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.ZfGCQKu.EA8xp904z4KP?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
-        title: "Calculator QA",
-        technologies: "[mocha, Chai, Selenium]",
-        description: "This app perform a basic QA for my online calculator project hosting on GitHub.",
-        liveDemoLink: null,
-        fullCodesLink: "https://github.com/raymondng117/onlineCalculatorTesting"
-    },
-
     // API Random Quotes
     {
         frontImage: "https://th.bing.com/th/id/OIG.rmAGNkjypW7JBXj6epXG?pid=ImgGn",
@@ -100,17 +78,6 @@ const programmingCodingCardData = [
         description: "This app can fetch quotes from GitHub and randomly generate single quote at every clicking.",
         liveDemoLink: "https://raymondng117.github.io/randomQuotes/",
         fullCodesLink: "https://github.com/raymondng117/randomQuotes"
-    },
-
-    // APOD search
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.xdLdg5rky0lbwHFInpkJ?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
-        title: "APOD search",
-        technologies: "[NASA API, Javascript, localStroage]",
-        description: "This App serves a webpage allowing users select images from NASA databse and save their favourite images in local storage.",
-        liveDemoLink: null,
-        fullCodesLink: "https://github.com/raymondng117/liveChat"
     },
 
     // Course Registration

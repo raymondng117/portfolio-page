@@ -19,8 +19,8 @@ const Navbar = () => {
             onMouseEnter={handleMouseEnterNav}
             onMouseLeave={handleMouseLeaveNav}
         >
-            <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`}  style={{ backgroundColor: '#028090' }} >
-                <div className="container-fluid" style={{ backgroundColor: '#028090' }} >
+            <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`} style={{ backgroundColor: '#0f2540' }} >
+                <div className="container-fluid" style={{ backgroundColor: '#0f2540' }} >
                     {/* Brand */}
                     <Link className="navbar-brand " to="/">
                         <img className="icon-logo me-3" src={process.env.PUBLIC_URL + "/images/logo.jpg"} alt="logo" />

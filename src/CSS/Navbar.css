@@ -51,22 +51,22 @@
 }
 
 #navbarSupportedContent {
-    background-color: #028090 !important;
+    background-color: #0f2540 !important;
 }
 
 .nav-bar-container {
-    border-bottom: #282839 solid 3px;
+    border-bottom: #0f2540 solid 3px;
     width: 100%;
 }
 
 .navbar-nav a {
     font-size: 18px !important;
     font-weight: 600 !important;
-    background-color: #028090 !important;
+    background-color: #0f2540 !important;
 }
 
 .navbar-nav {
-    background-color: #028090 !important;
+    background-color: #0f2540 !important;
 }
 
 @media (max-width:766px) {

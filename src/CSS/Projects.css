@@ -190,21 +190,28 @@
   }
 
   
-  @media screen and (max-width: 64rem){
+  @media screen and (max-width: 100rem){
     .projects-col{
-      width: calc(33.333333% - 2rem);
+      width: calc(33.333333333% - 2rem);
     }
   }
-  
-  @media screen and (max-width: 48rem){
+
+  @media screen and (max-width: 64rem){
     .projects-col{
       width: calc(50% - 2rem);
     }
   }
   
+  @media screen and (max-width: 48rem){
+    .projects-col{
+      width: 90%;
+      margin: 0 0 2rem 0;
+    }
+  }
+  
   @media screen and (max-width: 32rem){
     .projects-col{
-      width: 100%;
+      width: 90%;
       margin: 0 0 2rem 0;
     }
   }
