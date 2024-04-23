@@ -129,23 +129,28 @@ const Contact = () => {
         const email = form.querySelector('input[type="text"][placeholder="Email"]').value;
         const message = form.querySelector('textarea[placeholder="Message"]').value;
 
-        const apiURL = process.env.REACT_APP_MONGDBAPI
+        const apiURL = 'https://wise-adder-loyal.ngrok-free.app'
+        
         try {
-            const response = await fetch(`${apiURL}/portfolio-page-message`, {
+            console.log(apiURL);
+            await fetch(`${apiURL}/portfolio-page-message`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({ name, email, message })
-            });
-
-            if (response.ok) {
+            }).then(res => {
+                if(res.ok) {
                 setSendingMsg(false);
+                setShowErrMsg(false);
                 console.log("Message sent successfully!");
                 setIsSending(true);
                 setAnim(true);
                 timeline();
-            } 
+                } else {
+                    throw new Error('Failed to save message');
+                }
+            })
         } catch (error) {
             console.error("An error occurred:", error);
             setSendingMsg(false);
