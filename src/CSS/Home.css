@@ -3,7 +3,7 @@
 }
 
 .arrow-column-bg {
-    background-color: #0077b6;
+    background-color: #0B346E;
 }
 
 .home-page-bg {
@@ -22,7 +22,7 @@
 .arrow-img {
     width: 40px;
     height: 40px;
-    background-color: #0077b6;
+    background-color:#0B346E;
     border: none !important;
     animation: moveBackAndForth 0.5s infinite alternate;
 }
@@ -37,7 +37,7 @@
   }
 
 .arrow-column {
-    background-color: #0077b6;
+    background-color: #0B346E;
     left: 85%;
     top: 0;
     bottom: 0;

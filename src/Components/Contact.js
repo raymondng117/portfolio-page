@@ -130,16 +130,16 @@ const Contact = () => {
             <form id="contactform" onSubmit={send}>
                 {isSending && !anim && (
                     <div id="update">
-                        <p>Your message is on it's way! Will reply soon! :D</p>
+                        <p className=" fw-bolder">Your message is on it's way! Will reply soon! :D</p>
                         <button id="btn" onClick={reverseAnim}>
                             Send another
                         </button>
                     </div>
                 )}
                 <h1  className="inp fs-3 mb-4 fw-bolder">Feel free to reach out!!</h1>
-                <input className="inp" type="text" placeholder="Name" />
-                <input className="inp" type="text" placeholder="Email" />
-                <textarea className="inp" placeholder="Message" />
+                <input className="inp form-control" type="text" placeholder="Name" />
+                <input className="inp form-control" type="text" placeholder="Email" />
+                <textarea className="inp form-control" placeholder="Message" />
 
                 <button
                     id="submit"

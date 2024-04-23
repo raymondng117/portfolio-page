@@ -2,14 +2,27 @@ import React from 'react';
 
 import '../CSS/Projects.css';
 
+const backImagePath = process.env.PUBLIC_URL + '/images/project-previews/filping-back-img-backgroundcolor.JPG'
+
 const programmingCodingCardData = [
+    // portfolio page
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/portfolio.JPG',
+        backImage: backImagePath,
+        title: "Portfolio website",
+        technologies: "[React.js, React Router, Anime.js, MongoDB]",
+        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
+        fullCodesLink: "https://github.com/raymondng117/portfolio-page"
+    },
+
     // todoapp
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/todoapp.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "ToDoApp",
-        technologies: "[React.js, Express.js, Restful API, Docker, Ngrok]",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        technologies: "[React.js, Express.js, Restful API, MySQL, Docker, Ngrok]",
+        description: "An React-based app with three-screen inferfaces featuring a full-stack applictaion where users can register, login and edit.",
         liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
         fullCodesLink: "https://github.com/raymondng117/react-todo-app"
     },
@@ -17,10 +30,10 @@ const programmingCodingCardData = [
     // Pomodoro clock
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/pomodoroclock.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Pomodoro clock",
         technologies: "[React.js, Bootstrap]",
-        description: "This App creates a web application where users for now can customize own battle team for the adventure.",
+        description: "A React-based App where user can set a timer to break work into intervals, typically 25 minutes in length, separated by short breaks.",
         liveDemoLink: "https://raymondng117.github.io/pomodoroclock/",
         fullCodesLink: "https://github.com/raymondng117/pomodoroclock"
     },
@@ -28,21 +41,32 @@ const programmingCodingCardData = [
     // IntrovertCopilot
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/Introvertcopilot.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "IntroCopilot",
-        technologies: "[OpenAi API, Express.js, Bootstrap]",
-        description: "This App creates a web application where users for now can customize own battle team for the adventure.",
+        technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
+        description: "A web application based on fundamental HTML, CSS and JavaScript offering social introverts with AI-generated chat suggested examples for customized people.",
         liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
+    },
+
+    // API Random Quotes
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/random-quotes.JPG',
+        backImage: backImagePath,
+        title: "API Random Quotes",
+        technologies: "[React.js, Json data, GitHub API]",
+        description: "A React-based App fetching quotes from GitHub and randomly generate single quote at every clicking.",
+        liveDemoLink: "https://raymondng117.github.io/randomQuotes/",
+        fullCodesLink: "https://github.com/raymondng117/randomQuotes"
     },
 
     // FlipCards
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/filpcards.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Flip Cards",
         technologies: "[React.js, Bootstrap]",
-        description: "This App creates a page where users under same router can have consistent live chat with each other.",
+        description: "A React-based card game handling cards rendering during matching and dismatching state.",
         liveDemoLink: "https://raymondng117.github.io/flipcards",
         fullCodesLink: "https://github.com/raymondng117/flipcards"
     },
@@ -50,43 +74,32 @@ const programmingCodingCardData = [
     // Wanderland RPG 
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/wanderland.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Wanderland RPG",
         technologies: "[Angular, Angular-route, Angular-animate]",
-        description: "This App creates a web application where users for now can customize own battle team for the adventure.",
+        description: "An Angular-based app rendering an interface of RPG adventure game.",
         liveDemoLink: "https://raymondng117.github.io/wanderlandRPG/",
         fullCodesLink: "https://github.com/raymondng117/wanderlandRPG"
     },
-    
+
     // calcualtor
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/calculator.JPG',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Calculator",
         technologies: "[React.js, Bootstrap]",
-        description: "This application employs typical React functionalities like useState and useEffect to handle complex chained calculations and negative number computations and bootstrap.",
+        description: "A React-based application handling complex chained calculations and negative number computations.",
         liveDemoLink: "https://raymondng117.github.io/freeCodeCamp_calculator/",
         fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
-    },
-
-    // API Random Quotes
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.rmAGNkjypW7JBXj6epXG?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
-        title: "API Random Quotes",
-        technologies: "[React.js, Json data, GitHub API]",
-        description: "This app can fetch quotes from GitHub and randomly generate single quote at every clicking.",
-        liveDemoLink: "https://raymondng117.github.io/randomQuotes/",
-        fullCodesLink: "https://github.com/raymondng117/randomQuotes"
     },
 
     // Course Registration
     {
         frontImage: "https://th.bing.com/th/id/OIG.6MDhT.IxnRmSvcxdkkCw?pid=ImgGn",
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Course Registration",
         technologies: "[C#, ASP.NET, Bootstrap]",
-        description: "This app establishes a lifelike student registration system that allows users to input student enrollment data following predefined verification criteria.",
+        description: "A MVC-based application featuring a student registration system that allows users to input student enrollment data following predefined verification criteria.",
         liveDemoLink: null,
         fullCodesLink: "https://github.com/raymondng117/courseRegistration"
     }
@@ -94,20 +107,20 @@ const programmingCodingCardData = [
 
 const designCardData = [
     {
-        frontImage: process.env.PUBLIC_URL + '/images/figma.png',
-        backImage: "https://unsplash.it/511/511/",
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/figma.png',
+        backImage: backImagePath,
         title: "Wander World",
         technologies: "[Components, Prototyping, Auto-Layout]",
-        description: "In this project, the Figma online platform is utilized to craft a webpage resembling a travel agency site, featuring interactive elements.",
+        description: "An Figma project featuring a travel agency site with customized components and interactive elements",
         liveDemoLink: null,
         fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
     },
     {
         frontImage: process.env.PUBLIC_URL + '/images/design1.png',
-        backImage: "https://unsplash.it/511/511/",
+        backImage: backImagePath,
         title: "Slothrill",
         technologies: "[Layers, Image tracking, Selcetion tool]",
-        description: "This image is created using various Adobe illustrator built-in features through a individual project.",
+        description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
         liveDemoLink: null,
         fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"
     }
@@ -129,7 +142,7 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
                         <p>{description}</p>
                     </div>
                     <div className="links-row d-flex align-items-center">
-                        <div className='d-flex link-buttons-flex justify-content-between align-items-center'>
+                        <div className='d-flex link-buttons-flex justify-content-around align-items-center'>
                             <a href={liveDemoLink} target="_blank col-4"><button className='btn btn-secondary'>Live Demo</button></a>
                             <a href={fullCodesLink} target="_blank col-4"><button className='btn btn-secondary'>Code Source</button></a>
                         </div>
