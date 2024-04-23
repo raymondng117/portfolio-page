@@ -11,7 +11,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "Portfolio website",
         technologies: "[React.js, React Router, Anime.js, MongoDB]",
-        description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.",
+        description: "An React-based app mainly with employments of react-router for page navigation and MongoDB to store client's message.",
         liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
         fullCodesLink: "https://github.com/raymondng117/portfolio-page"
     },
@@ -44,7 +44,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "IntroCopilot",
         technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
-        description: "A web application based on fundamental HTML, CSS and JavaScript offering social introverts with AI-generated chat suggested examples for customized people.",
+        description: "An application based on fundamental CSS and JavaScript offering AI-generated chat suggested examples for specific scenarios.",
         liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
     },
@@ -71,6 +71,17 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/flipcards"
     },
 
+    // Course Registration
+    {
+        frontImage: "https://th.bing.com/th/id/OIG.6MDhT.IxnRmSvcxdkkCw?pid=ImgGn",
+        backImage: backImagePath,
+        title: "Course Registration",
+        technologies: "[C#, ASP.NET, MySQL Bootstrap]",
+        description: "An MVC application based on .NET and C# featuring a student registration system that allows users's data modification.",
+        liveDemoLink: null,
+        fullCodesLink: "https://github.com/raymondng117/courseRegistration"
+    },
+
     // Wanderland RPG 
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/wanderland.JPG',
@@ -93,16 +104,6 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
     },
 
-    // Course Registration
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.6MDhT.IxnRmSvcxdkkCw?pid=ImgGn",
-        backImage: backImagePath,
-        title: "Course Registration",
-        technologies: "[C#, ASP.NET, Bootstrap]",
-        description: "A MVC-based application featuring a student registration system that allows users to input student enrollment data following predefined verification criteria.",
-        liveDemoLink: null,
-        fullCodesLink: "https://github.com/raymondng117/courseRegistration"
-    }
 ];
 
 const designCardData = [
@@ -110,7 +111,7 @@ const designCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/figma.png',
         backImage: backImagePath,
         title: "Wander World",
-        technologies: "[Components, Prototyping, Auto-Layout]",
+        technologies: "[Figma, Components, Prototyping, Auto-Layout]",
         description: "An Figma project featuring a travel agency site with customized components and interactive elements",
         liveDemoLink: null,
         fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
@@ -119,7 +120,7 @@ const designCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/design1.png',
         backImage: backImagePath,
         title: "Slothrill",
-        technologies: "[Layers, Image tracking, Selcetion tool]",
+        technologies: "[Adobe illustrator, Layers, Image tracking, Selcetion tool]",
         description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
         liveDemoLink: null,
         fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"

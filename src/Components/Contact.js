@@ -5,6 +5,9 @@ import '../CSS/Contact.css';
 const Contact = () => {
     const [isSending, setIsSending] = useState(false);
     const [anim, setAnim] = useState(false);
+    const [sendingMsg, setSendingMsg] = useState(false);
+    const [showErrMsg, setShowErrMsg] = useState(false);
+
 
     const validateForm = (toggle) => {
         if (!anim && !isSending) {
@@ -118,11 +121,36 @@ const Contact = () => {
             });
     };
 
-    const send = (e) => {
+    const send = async (e) => {
         e.preventDefault();
-        setIsSending(true);
-        setAnim(true);
-        timeline();
+        setSendingMsg(true);
+        const form = e.target;
+        const name = form.querySelector('input[type="text"][placeholder="Name"]').value;
+        const email = form.querySelector('input[type="text"][placeholder="Email"]').value;
+        const message = form.querySelector('textarea[placeholder="Message"]').value;
+
+        const apiURL = process.env.REACT_APP_MONGDBAPI
+        try {
+            const response = await fetch(`${apiURL}/portfolio-page-message`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            if (response.ok) {
+                setSendingMsg(false);
+                console.log("Message sent successfully!");
+                setIsSending(true);
+                setAnim(true);
+                timeline();
+            } 
+        } catch (error) {
+            console.error("An error occurred:", error);
+            setSendingMsg(false);
+            setShowErrMsg(true);
+        }
     };
 
     return (
@@ -136,10 +164,10 @@ const Contact = () => {
                         </button>
                     </div>
                 )}
-                <h1  className="inp fs-3 mb-4 fw-bolder">Feel free to reach out!!</h1>
-                <input className="inp form-control" type="text" placeholder="Name" />
-                <input className="inp form-control" type="text" placeholder="Email" />
-                <textarea className="inp form-control" placeholder="Message" />
+                <h1 className="inp fs-3 mb-4 fw-bolder">Feel free to reach out!!</h1>
+                <input className="inp form-control" type="text" placeholder="Name" required />
+                <input className="inp form-control" type="text" placeholder="Email" required />
+                <textarea className="inp form-control" placeholder="Message" required />
 
                 <button
                     id="submit"
@@ -189,6 +217,8 @@ const Contact = () => {
                         </svg>
                     </div>
                 </button>
+
+                {sendingMsg? <div className="mt-2 fw-bold text-center" id="errMsg">{`Sending...`}</div> : showErrMsg && <div className="mt-2 fw-bold text-center" id="errMsg">{`Fail to send message, please try later :( `}</div>}
             </form>
         </div>
 
