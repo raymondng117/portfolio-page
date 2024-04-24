@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../CSS/Home.css'
 import { useNavigate } from "react-router-dom";
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
+import { GiShipWheel } from "react-icons/gi";
 
 
 const Home = () => {
@@ -94,7 +95,7 @@ const Home = () => {
       <div className='arrow-column-bg col-md-1'></div>
 
       <div className={`arrow-column d-flex col-sm-5  col-12 col-md-1 justify-content-center align-items-center text-center ${moved ? 'moved' : ''}`} onClick={moveArrowColumn}>
-        <HiOutlinePaperAirplane className='arrow-img' />
+        <GiShipWheel className='arrow-img' />
       </div>
 
       <div className='blank-column-bg col-md-1'></div>

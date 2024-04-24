@@ -1,6 +1,14 @@
 .nav-bar-container {
     overflow: hidden;
     transition: max-height 1.5s ease;
+    border-bottom: #0f2540 solid 10px;
+    width: 100%;
+}
+
+.navbar {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #0f2540 !important;
 }
 
 .navbar-visible {
@@ -30,6 +38,14 @@
     border-bottom: 2px solid #8e8e9f;
 }
 
+.navbar-toggler {
+    border: black solid 2px;
+}
+
+.navbar-toggler:hover {
+    opacity: 0.5;
+    background-color: #2E5C6E;
+}
 
 .navbar-brand {
     font-weight: 700 !important;
@@ -52,11 +68,6 @@
 
 #navbarSupportedContent {
     background-color: #0f2540 !important;
-}
-
-.nav-bar-container {
-    border-bottom: #0f2540 solid 3px;
-    width: 100%;
 }
 
 .navbar-nav a {

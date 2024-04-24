@@ -96,7 +96,8 @@
   }
   
   .inner{
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
+      opacity: 0.9;
       -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
               transform: translateY(-50%) translateZ(60px) scale(0.94);
       top: 50%;

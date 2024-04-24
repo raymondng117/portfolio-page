@@ -19,7 +19,7 @@ const Navbar = () => {
             onMouseEnter={handleMouseEnterNav}
             onMouseLeave={handleMouseLeaveNav}
         >
-            <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`} style={{ backgroundColor: '#0f2540' }} >
+            <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`} >
                 <div className="container-fluid" style={{ backgroundColor: '#0f2540' }} >
                     {/* Brand */}
                     <Link className="navbar-brand " to="/">

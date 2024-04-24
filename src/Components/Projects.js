@@ -8,7 +8,7 @@ const programmingCodingCardData = [
     // portfolio page
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/portfolio.JPG',
-        backImage: backImagePath,
+        backImage: backImagePath, 
         title: "Portfolio website",
         technologies: "[React.js, React Router, Anime.js, MongoDB]",
         description: "An React-based app mainly with employments of react-router for page navigation and MongoDB to store client's message.",
@@ -139,8 +139,8 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
             </div>
             <div className="back" style={{ backgroundImage: `url(${backImage})` }}>
                 <div className="inner">
-                    <div className="description-row">
-                        <p>{description}</p>
+                    <div className="description-row mb-3">
+                        <p className='text-start'>{description}</p>
                     </div>
                     <div className="links-row d-flex align-items-center">
                         <div className='d-flex link-buttons-flex justify-content-around align-items-center'>

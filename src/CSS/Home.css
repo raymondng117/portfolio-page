@@ -3,7 +3,7 @@
 }
 
 .arrow-column-bg {
-    background-color: #0B346E;
+    background-color: #0f2540;
 }
 
 .home-page-bg {
@@ -22,28 +22,30 @@
 .arrow-img {
     width: 40px;
     height: 40px;
-    background-color:#0B346E;
+    background-color:#0f2540;
     border: none !important;
-    animation: moveBackAndForth 0.5s infinite alternate;
+    animation: roll 4s infinite linear;
+    margin-right: 20%;
 }
 
-@keyframes moveBackAndForth {
+@keyframes roll {
     from {
-      transform: translateX(-30px);
+        transform: rotate(0deg);
     }
     to {
-      transform: translateX(10px); /* Adjust the distance of movement as needed */
+        transform: rotate(360deg);
     }
-  }
+}
 
 .arrow-column {
-    background-color: #0B346E;
+    background-color: #0f2540;
     left: 85%;
     top: 0;
     bottom: 0;
     z-index: 2;
     height: 100vh;
     position: absolute;
+    cursor: pointer;
 }
 
 @keyframes moveRight {
