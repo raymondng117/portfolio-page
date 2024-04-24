@@ -1,11 +1,12 @@
 .body {
     background-color: #1B3040;
+    /* overflow: hidden; */
 }
 
 .outside-container {
     background-color: #1B3040;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .main-container {
@@ -45,7 +46,18 @@
     background-color: transparent;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1400px) {
+    .about-thumbnail {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+@media (max-width: 993px) {
     .about-thumbnail {
         display: block;
         width: 50%;

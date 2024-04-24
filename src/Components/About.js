@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='container outside-container'>
             <div className='row align-items-center main-container'>
-                <div className='d-flex col-md-4 col-12 flex-column justify-content-start text-center align-items-center p-3 profile-contact-column'>
+                <div className='d-flex col-lg-4 col-12 flex-column justify-content-start text-center align-items-center p-3 profile-contact-column'>
                     <img
                         src={process.env.PUBLIC_URL + "/images/01.jpeg"}
                         alt="About Me"
@@ -27,11 +27,12 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className='d-flex col-md-8 col-12 p-3 flex-column about-content-column'>
+                <div className='d-flex col-lg-8 col-12 p-3 flex-column about-content-column'>
                     <div>
                         <h1 className='display-4 fw-bolder'>About me</h1>
                         <p className='about-p'>
-                            Hi there! I'm YU WING NG. Originally from Hong Kong <img width="24" height="24" src="https://img.icons8.com/color/48/hongkong-flag.png" alt="hongkong-flag" />, I began my journey in Canada in 2023. To satisfy my unquenchable curiosity, I decided to continue my education in Canada, focusing on web development and internet application programming at Algonquin College. During my studies, I found more satisfaction than ever before because I was finally able to create something tangible and discovered a true passion for coding enjoy the challenging process<img width="24" height="24" src="https://img.icons8.com/external-flatarticons-blue-flatarticons/65/external-world-web-design-and-development-flatarticons-blue-flatarticons.png" alt="external-world-web-design-and-development-flatarticons-blue-flatarticons"/>. 
+                            Hi there! I'm YU WING NG, originally from Hong Kong <img width="24" height="24" src="https://img.icons8.com/color/48/hongkong-flag.png" alt="hongkong-flag" />
+                            . I'm someone who's keen to explore various fields of knowledge. I pursued Sociology and Finance at City University of Hong Kong, followed by Journalism at the Chinese University of Hong Kong. To satisfy my curiosity, I decided to continue my education in Canada, focusing on web development and internet application programming at Algonquin College. During my studies, I do find more satisfaction than ever before because I am finally able to create something tangible and discovered a true passion for coding enjoy the challenging process.
                         </p>
 
                         <p className='about-p'>

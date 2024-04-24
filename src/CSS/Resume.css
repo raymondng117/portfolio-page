@@ -1,0 +1,25 @@
+@media (max-width: 576px) {
+    .skillset-small-screen {
+        align-items: center;
+    }
+
+    h1,
+    h5 {
+        text-align: center;
+    }
+
+    ul,
+    li {
+        text-align: center;
+    }
+}
+
+.btn {
+    color: whitesmoke !important;
+}
+
+
+
+.btn {
+    cursor: default !important;
+}
