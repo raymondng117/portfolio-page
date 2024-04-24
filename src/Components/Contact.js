@@ -129,11 +129,11 @@ const Contact = () => {
         const email = form.querySelector('input[type="text"][placeholder="Email"]').value;
         const message = form.querySelector('textarea[placeholder="Message"]').value;
 
-        const apiURL = 'https://wise-adder-loyal.ngrok-free.app'
+        const apiURL = REACT_APP_MONGDBAPI
         
         try {
             console.log(apiURL);
-            await fetch(`${apiURL}/portfolio-page-message`, {
+            await fetch(`${REACT_APP_MONGDBAPI}/portfolio-page-message`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
