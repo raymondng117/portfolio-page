@@ -132,20 +132,20 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
     <div className="projects-col" onTouchStart="this.classList.toggle('hover')">
         <div className="projects-container">
             <div className="front" style={{ backgroundImage: `url(${frontImage})` }}>
-                <div className="inner">
+                <div className="inner front-inner">
                     <p>{title}</p>
-                    <span className='text-start'>{technologies}</span>
+                    <span className='text-start front-tech-text'>{technologies}</span>
                 </div>
             </div>
             <div className="back" style={{ backgroundImage: `url(${backImage})` }}>
-                <div className="inner">
+                <div className="inner back-inner-small-screen">
                     <div className="description-row mb-3">
                         <p className='text-start'>{description}</p>
                     </div>
                     <div className="links-row d-flex align-items-center">
                         <div className='d-flex link-buttons-flex justify-content-around align-items-center'>
-                            <a href={liveDemoLink} target="_blank col-4"><button className='btn btn-secondary'>Live Demo</button></a>
-                            <a href={fullCodesLink} target="_blank col-4"><button className='btn btn-secondary'>Code Source</button></a>
+                            <a href={liveDemoLink} target="_blank col-4 link-buttons"><button className='btn btn-secondary'>Live Demo</button></a>
+                            <a href={fullCodesLink} target="_blank col-4 link-buttons"><button className='btn btn-secondary'>Code Source</button></a>
                         </div>
                     </div>
                 </div>
