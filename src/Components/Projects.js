@@ -144,8 +144,8 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
                     </div>
                     <div className="links-row d-flex align-items-center">
                         <div className='d-flex link-buttons-flex justify-content-around align-items-center'>
-                            <a href={liveDemoLink} target="_blank col-4 link-buttons"><button className='btn btn-secondary'>Live Demo</button></a>
-                            <a href={fullCodesLink} target="_blank col-4 link-buttons"><button className='btn btn-secondary'>Code Source</button></a>
+                            <a href={liveDemoLink} target="_blank col-4 "><button className='btn btn-secondary link-buttons'>Live Demo</button></a>
+                            <a href={fullCodesLink} target="_blank col-4 "><button className='btn btn-secondary link-buttons'>Code Source</button></a>
                         </div>
                     </div>
                 </div>

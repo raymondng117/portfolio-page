@@ -228,14 +228,16 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
+    padding: 0;
   }
 
   .front-tech-text {
     display: none;
   }
 
-  .link-buttons {
-    width: 40% !important;
+
+  .links-row {
+    width: 100% !important;
   }
 
   .front .inner p:after {
