@@ -191,6 +191,11 @@
   width: 100%;
 }
 
+.link-buttons-flex a,
+.link-buttons-flex button {
+  cursor: pointer !important;
+}
+
 
 @media screen and (max-width: 100rem) {
   .projects-col {

@@ -11,7 +11,7 @@ const programmingCodingCardData = [
         backImage: backImagePath, 
         title: "Portfolio website",
         technologies: "[React.js, React Router, Anime.js, MongoDB]",
-        description: "An React-based app mainly with employments of react-router for page navigation and MongoDB to store client's message.",
+        description: "An React-based app with employments of react-router for page navigation, advanced CSS for animation and MongoDB to store client's message.",
         liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
         fullCodesLink: "https://github.com/raymondng117/portfolio-page"
     },
@@ -22,7 +22,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "ToDoApp",
         technologies: "[React.js, Express.js, Restful API, MySQL, Docker, Ngrok]",
-        description: "An React-based app with three-screen inferfaces featuring a full-stack applictaion where users can register, login and edit.",
+        description: "An React-based app featuring a full-stack To-Do applictaion where users can register, login and edit. The backend part including Restful API and MySQL is held using Docker container.",
         liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
         fullCodesLink: "https://github.com/raymondng117/react-todo-app"
     },
@@ -44,7 +44,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "IntroCopilot",
         technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
-        description: "An application based on fundamental CSS and JavaScript offering AI-generated chat suggested examples for specific scenarios.",
+        description: "An life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
         liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
     },
@@ -77,7 +77,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "Course Registration",
         technologies: "[C#, ASP.NET, MySQL Bootstrap]",
-        description: "An MVC application based on .NET and C# featuring a student registration system that allows users's data modification.",
+        description: "An MVC application based on ASP.NET CORE written with C# featuring a student registration system that allows users's data modification.",
         liveDemoLink: null,
         fullCodesLink: "https://github.com/raymondng117/courseRegistration"
     },

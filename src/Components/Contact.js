@@ -169,7 +169,7 @@ const Contact = () => {
                         </button>
                     </div>
                 )}
-                <h1 className="inp fs-3 mb-4 fw-bolder">Feel free to reach out!!</h1>
+                <h1 className="inp fs-3 mb-4 fw-bolder">Leave me a message by launching the animated rocket! <img width="24" height="24" src="https://img.icons8.com/cotton/64/rocket.png" alt="rocket"/> </h1>
                 <input className="inp form-control" type="text" placeholder="Name" required />
                 <input className="inp form-control" type="text" placeholder="Email" required />
                 <textarea className="inp form-control" placeholder="Message" required />
