@@ -32,7 +32,7 @@ const About = () => {
                         <h1 className='display-4 fw-bolder'>About me</h1>
                         <p className='about-p'>
                             Hi there! I'm YU WING NG, originally from Hong Kong <img width="24" height="24" src="https://img.icons8.com/color/48/hongkong-flag.png" alt="hongkong-flag" />
-                            . I'm someone who's keen to explore various fields of knowledge. I pursued Sociology and Finance at City University of Hong Kong, followed by Journalism at the Chinese University of Hong Kong. To satisfy my curiosity, I decided to continue my education in Canada, focusing on web development and internet application programming at Algonquin College. During my studies, I do find more satisfaction than ever before because I am finally able to create something tangible and discovered a true passion for coding enjoy the challenging process.
+                            . I'm passionate about exploring various fields of knowledge. I completed my Bachelor's degree in Sociology and Finance at City University of Hong Kong, followed by a Master of Arts in Journalism at the Chinese University of Hong Kong. In 2023, I embarked on a new journey by pursuing web development  and internet application programming <img width="24" height="24" src="https://img.icons8.com/fluency/48/laptop-settings.png" alt="laptop-settings" /> at Algonquin College in Canada. During my time at AC, I found immense satisfaction in creating tangible projects and discovered a genuine passion for coding. It's been an exciting and fulfilling journey! <img width="24" height="24" src="https://img.icons8.com/color/48/ambition.png" alt="ambition" />
                         </p>
 
                         <p className='about-p'>
@@ -51,36 +51,37 @@ const About = () => {
 
                             <button className="btn btn-outline-secondary btn-about rounded-pill col-12">
                                 <div className='d-flex align-items-center justify-content-center text-center'>
-                                    <img className="d-block" width="24" height="24" src="https://img.icons8.com/color/48/fire-heart--v1.png" alt="controller" />
+                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/color/48/fire-heart--v1.png" alt="controller" />
                                     <p className="d-block m-0">Enthusiasm</p>
                                 </div>
                             </button>
                             <button className="btn btn-outline-secondary btn-about rounded-pill col-12">
                                 <div className='d-flex align-items-center justify-content-center text-center'>
-                                    <img className="d-block" width="24" height="24" src="https://img.icons8.com/dusk/64/saving-book.png" alt="saving-book" />
+                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/dusk/64/saving-book.png" alt="saving-book" />
                                     <p className="d-block m-0">Concentration</p>
                                 </div>
                             </button>
 
                             <button className="btn btn-outline-secondary btn-about rounded-pill col-12">
                                 <div className='d-flex align-items-center justify-content-center text-center'>
-                                    <img className="d-block" width="24" height="24" src="https://img.icons8.com/color/48/growing-money--v2.png" alt="controller" />
-                                    <p className="d-block m-0"> Investment</p>
+                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/color/48/futurama-hermes-conrad.png" alt="futurama-hermes-conrad" />
+                                    <p className="d-block m-0">Workaholic</p>
                                 </div>
                             </button>
                         </div>
 
                         <div className='d-flex align-items-center justify-content-md-between flex-column col-sm-5 col-12'>
+
                             <button className="btn btn-outline-secondary btn-about rounded-pill col-12">
                                 <div className='d-flex align-items-center justify-content-center text-center'>
-                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/color/48/who-skin-type-1.png" alt="controller" />
-                                    <p className="d-block m-0">INFP</p>
+                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/color/48/growing-money--v2.png" alt="controller" />
+                                    <p className="d-block m-0"> Investment</p>
                                 </div>
                             </button>
 
                             <button className="btn btn-outline-secondary btn-about rounded-pill col-12">
                                 <div className='d-flex align-items-center justify-content-center text-center'>
-                                    <img className="d-block" width="24" height="24" src="https://img.icons8.com/color/48/airplane-take-off--v1.png" alt="controller" />
+                                    <img className="d-block me-1" width="24" height="24" src="https://img.icons8.com/color/48/airplane-take-off--v1.png" alt="controller" />
                                     <p className="d-block m-0"> Travel</p>
                                 </div>
                             </button>
@@ -102,7 +103,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div class="wave"></div>
+
+            {/* <div class="wave"></div> */}
         </div>
     );
 };

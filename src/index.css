@@ -3,10 +3,11 @@
 * {
     font-family: 'Lato',monospace, 'Courier New', Courier;
     color: white;
+    
 }
 
 body {
-    background-color: #1B3040; /* This will be applied to all pages */
+    background-color: #1B3040; 
 }
 
 .hr {
