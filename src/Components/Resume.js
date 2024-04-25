@@ -21,10 +21,10 @@ const Resume = () => {
     "Node.js",
     "SQL",
     "C#",
-    "ASP.NET",
-    "Python",
+    "Bootstrap",
+    "Docker",
     "MongoDB",
-    "CSS",
+    "PHP",
 
     // 16
     "--Operating Systems:",
@@ -71,19 +71,20 @@ const Resume = () => {
         <div className='d-flex flex-sm-row flex-column justify-content-start skillset-small-screen'>
           <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/officel/16/react.png" alt="react" /> {typedWords[8]}</button>
 
+
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" className='me-2' />{typedWords[9]}</button>
+
           <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/fluency/48/c-sharp-logo.png" alt="c-sharp-logo" className='me-2' />{typedWords[11]}</button>
 
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1" className='me-2' />{typedWords[13]}</button>
 
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/nolan/64/asp.png" alt="asp" className='me-2' />{typedWords[12]}</button>
-
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="20" height="20" src="https://img.icons8.com/color/48/php.png" alt="php" className='me-2'/>{typedWords[15]}</button>
         </div>
 
         <div className='d-flex flex-sm-row flex-column justify-content-start skillset-small-screen'>
 
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" className='me-2' />{typedWords[9]}</button>
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="24" height="24" src="https://img.icons8.com/external-those-icons-lineal-color-those-icons/24/external-Docker-social-media-those-icons-lineal-color-those-icons.png" alt="external-Docker-social-media-those-icons-lineal-color-those-icons" className='me-2' />{typedWords[13]}</button>
 
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/color/48/css3.png" alt="css3" className='me-2' />{typedWords[15]}</button>
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/nolan/64/bootstrap.png" alt="bootstrap" className='me-2' />{typedWords[12]}</button>
 
           <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/office/16/data-configuration.png" alt="data-configuration" className='me-2' />{typedWords[10]}</button>
 

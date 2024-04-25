@@ -1,12 +1,10 @@
 .body {
-    background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-    
+    background-color: #1B3040; 
 }
 
 .outside-container {
     background-color: #1B3040;
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-    overflow: hidden !important;
 }
 
 .main-container {
@@ -63,12 +61,6 @@
         width: 50%;
         height: 50%;
     }
-}
-
-.wave-container {
-    width: 50%;
-    height: 50%;
-    overflow: hidden;
 }
 
 .wave {
