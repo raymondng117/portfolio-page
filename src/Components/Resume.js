@@ -17,8 +17,8 @@ const Resume = () => {
     "SKILLSET",
     "--Languages and Frameworks:",
     // 8
-    "React",
-    "Node.js",
+    "React.js",
+    "Express.js",
     "SQL",
     "C#",
     "Bootstrap",
@@ -69,10 +69,10 @@ const Resume = () => {
 
         <h5 >{typedWords[7]}</h5>
         <div className='d-flex flex-sm-row flex-column justify-content-start skillset-small-screen'>
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/officel/16/react.png" alt="react" /> {typedWords[8]}</button>
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/officel/16/react.png" alt="react" className='me-2'/> {typedWords[8]}</button>
 
 
-          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/fluency/48/node-js.png" alt="node-js" className='me-2' />{typedWords[9]}</button>
+          <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/nolan/64/express-js.png" alt="express-js" className='me-2'/>{typedWords[9]}</button>
 
           <button className='btn btn-outline-secondary rounded-pill m-1 btn-resume-skill'><img width="16" height="16" src="https://img.icons8.com/fluency/48/c-sharp-logo.png" alt="c-sharp-logo" className='me-2' />{typedWords[11]}</button>
 
