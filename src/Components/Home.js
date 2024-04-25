@@ -48,11 +48,11 @@ const Home = () => {
         setCurrentIntroText((prevText) => prevText + introText[introCharIndex]);
         introCharIndex++;
       } else if (introChar2Index < introText2.length) {
-        setTypedText(true)
         setCurrentIntroText2((prevText) => prevText + introText2[introChar2Index]);
         introChar2Index++;
       } else {
-        moveArrowColumn();
+        setTypedText(true)
+        setTimeout(moveArrowColumn, 1000);
       }
       // else if (mottoCharIndex < mottoText.length) {
       //   setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
@@ -93,14 +93,14 @@ const Home = () => {
       <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
         <div className="container">
           <div className="row"> 
-            <div className='col-12 text-center'>
+            <div className='col-12 text-start'>
               <h1 className="display-5 fw-bolder my-5">
                 {currentIntroText.replace("undefined", "")}
-                {typedText ? (<i className="fa-regular fa-face-smile-wink fa-bounce"></i>) : null}
               </h1>
               <h1 className="display-5 fw-bolder my-5">
                 {currentIntroText2.replace("undefined", "")}
               </h1>
+              {typedText ? <h1><i className="fa-regular fa-face-smile-wink fa-bounce"></i></h1>  : null}
             </div>
           </div>
         </div>
