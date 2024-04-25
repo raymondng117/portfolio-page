@@ -3,7 +3,7 @@
 }
 
 .arrow-column-bg {
-    background-color: #0f2540;
+    background-color: #0f2540
 }
 
 .home-page-bg {
@@ -68,4 +68,14 @@
 
 .motto {
     font-family: Courier !important;
+}
+
+@media (max-width:768px) {
+    .arrow-column-bg {
+        display: none !important;
+    }
+
+    .arrow-column {
+        display: none !important;
+    }
 }

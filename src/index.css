@@ -1,6 +1,8 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
 * {
-    font-family: monospace, 'Courier New', Courier;
-    color: whitesmoke;
+    font-family: 'Lato',monospace, 'Courier New', Courier;
+    color: white;
 }
 
 body {

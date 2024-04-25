@@ -1,8 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../CSS/Navbar.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000, // animation duration in milliseconds
+          once: true, // whether animation should only happen once
+        });
+      }, []);
+
     const [navbarVisible, setNavbarVisible] = useState(false);
 
     const handleMouseEnterNav = () => {
@@ -13,6 +22,18 @@ const Navbar = () => {
         setNavbarVisible(false);
     }
 
+    useEffect(() => {
+        handleMouseEnterNav();
+
+        const timeoutId = setTimeout(() => {
+          handleMouseLeaveNav();
+        }, 3000);
+      
+        return () => {
+          clearTimeout(timeoutId); // Clear the timeout if the component unmounts or useEffect runs again
+        };
+    }, [])
+
     return (
         <div
             className={`nav-bar-container ${navbarVisible ? 'navbar-visible' : 'navbar-hidden'}`}
@@ -20,7 +41,7 @@ const Navbar = () => {
             onMouseLeave={handleMouseLeaveNav}
         >
             <nav className={`navbar navbar-expand-lg navbar-light sticky-top${navbarVisible ? ' navbar-visible' : ''}`} >
-                <div className="container-fluid" style={{ backgroundColor: '#0f2540' }} >
+                <div className="container-fluid" >
                     {/* Brand */}
                     <Link className="navbar-brand " to="/">
                         <img className="icon-logo me-3" src={process.env.PUBLIC_URL + "/images/logo.jpg"} alt="logo" />

@@ -8,8 +8,8 @@
         text-align: center;
     }
 
-    ul,
-    li {
+    .resume-container ul,
+    .resume-container li {
         text-align: center;
     }
 }

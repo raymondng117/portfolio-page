@@ -3,6 +3,8 @@ import '../CSS/Home.css'
 import { useNavigate } from "react-router-dom";
 import { HiOutlinePaperAirplane } from "react-icons/hi2";
 import { GiShipWheel } from "react-icons/gi";
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 
 const Home = () => {
@@ -49,36 +51,48 @@ const Home = () => {
         setTypedText(true)
         setCurrentIntroText2((prevText) => prevText + introText2[introChar2Index]);
         introChar2Index++;
-      }
-      else if (mottoCharIndex < mottoText.length) {
-        setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
-        mottoCharIndex++;
-      } else if (quoteCharIndex < quoteText.length) {
-        setCurrentQuoteText((prevText) => prevText + quoteText[quoteCharIndex]);
-        quoteCharIndex++;
-      } else if (japaneseMottoCharIndex < japaneseMottoText.length) {
-        setCurrentJapaneseMottoText((prevText) => prevText + japaneseMottoText[japaneseMottoCharIndex]);
-        japaneseMottoCharIndex++;
-      } else if (japaneseCharIndex < japaneseText.length) {
-        setCurrentJapaneseText((prevText) => prevText + japaneseText[japaneseCharIndex]);
-        japaneseCharIndex++;
       } else {
-        clearInterval(interval);
+        moveArrowColumn();
       }
+      // else if (mottoCharIndex < mottoText.length) {
+      //   setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
+      //   mottoCharIndex++;
+      // } else if (quoteCharIndex < quoteText.length) {
+      //   setCurrentQuoteText((prevText) => prevText + quoteText[quoteCharIndex]);
+      //   quoteCharIndex++;
+      // } else if (japaneseMottoCharIndex < japaneseMottoText.length) {
+      //   setCurrentJapaneseMottoText((prevText) => prevText + japaneseMottoText[japaneseMottoCharIndex]);
+      //   japaneseMottoCharIndex++;
+      // } else if (japaneseCharIndex < japaneseText.length) {
+      //   setCurrentJapaneseText((prevText) => prevText + japaneseText[japaneseCharIndex]);
+      //   japaneseCharIndex++;
+      // } else {
+      //   clearInterval(interval);
+        
+      // }
     }, 55);
 
     return () => {
       clearInterval(interval);
+      
     };
 
   }, []);
 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 1000, // animation duration in milliseconds
+  //     once: true, // whether animation should only happen once
+  //   });
+  // }, []);
+
 
   return (
     <div className='d-flex col-12 flex-md-row flex-column content-container'>
+
       <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
         <div className="container">
-          <div className="row">
+          <div className="row"> 
             <div className='col-12 text-center'>
               <h1 className="display-5 fw-bolder my-5">
                 {currentIntroText.replace("undefined", "")}
