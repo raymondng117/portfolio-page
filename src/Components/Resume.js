@@ -117,7 +117,8 @@ const Resume = () => {
 
 
         <div className='d-flex justify-content-center'>
-          {<button className='btn btn-secondary btn-lg mt-5' onClick={downloadResume}>{typedWords[25]}</button>}
+          {/* onClick={downloadResume} */}
+          {<button className='btn btn-secondary btn-lg mt-5' >{typedWords[25]}</button>}
         </div>
 
       </div>
