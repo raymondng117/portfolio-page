@@ -125,11 +125,24 @@ const Contact = () => {
         e.preventDefault();
         setSendingMsg(true);
         const form = e.target;
-        const name = form.querySelector('input[type="text"][placeholder="Name"]').value;
-        const email = form.querySelector('input[type="text"][placeholder="Email"]').value;
-        const message = form.querySelector('textarea[placeholder="Message"]').value;
+        let name;
+        let email;
 
-        const apiURL = process.env.REACT_APP_MONGDBAPI
+        if (form.querySelector('input[type="text"][placeholder="Name"]').value) {
+             name = form.querySelector('input[type="text"][placeholder="Name"]').value;
+        } else {
+             name = null;
+
+        }
+
+        if (form.querySelector('input[type="text"][placeholder="Email/LinkedIn"]').value) {
+             email = form.querySelector('input[type="text"][placeholder="Email/LinkedIn"]').value;
+        } else {
+            email = null;
+        }
+
+        const message = form.querySelector('textarea[placeholder="Message"]').value;
+        const apiURL = process.env.REACT_APP_MONGODBAPI
         
         try {
             console.log(apiURL);
@@ -170,8 +183,8 @@ const Contact = () => {
                     </div>
                 )}
                 <h1 className="inp fs-3 mb-4 fw-bolder">Leave me a message by launching the animated rocket! <img width="24" height="24" src="https://img.icons8.com/cotton/64/rocket.png" alt="rocket"/> </h1>
-                <input className="inp form-control" type="text" placeholder="Name" />
-                <input className="inp form-control" type="text" placeholder="Email/LinkedIn" />
+                <input className="inp form-control" type="text" placeholder="Name"/>
+                <input className="inp form-control" type="text" placeholder="Email/LinkedIn"/>
                 <textarea className="inp form-control" placeholder="Message" required />
 
                 <button
