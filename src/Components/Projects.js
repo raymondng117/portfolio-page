@@ -31,7 +31,7 @@ const programmingCodingCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/restaurantreviewapp.JPG',
         backImage: backImagePath,
         title: "Restaurant Review",
-        technologies: "[C#, ASP.NET(MVC and API modules), JSON, XML, Docker-compose Bootstrap]",
+        technologies: "[C#, ASP.NET(MVC and API modules), JSON, XML, Docker, Ngrok, Bootstrap]",
         description: "An ASP.NET MVC application built with C# allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET API application based on C# as well. Both applications are containerized using Docker.",
         liveDemoLink: "https://saved-included-reindeer.ngrok-free.app/",
         fullCodesLink: "https://github.com/raymondng117/restaurantreviewapp"
@@ -42,7 +42,7 @@ const programmingCodingCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/Introvertcopilot.JPG',
         backImage: backImagePath,
         title: "IntroCopilot",
-        technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
+        technologies: "[OpenAi API, Express.js, Jquery, Bootstrap]",
         description: "An life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
         liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
