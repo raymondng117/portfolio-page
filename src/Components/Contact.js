@@ -145,7 +145,7 @@ const Contact = () => {
         const apiURL = process.env.REACT_APP_MONGODBAPI
         
         try {
-            console.log(apiURL);
+            // console.log(apiURL);
             await fetch(`${apiURL}/portfolio-page-message`, {
                 method: "POST",
                 headers: {
