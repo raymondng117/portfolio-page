@@ -51,7 +51,7 @@ const Home = () => {
         introChar2Index++;
       } else {
         setTypedText(true)
-        // setTimeout(moveArrowColumn, 1000);
+        setTimeout(moveArrowColumn, 1000);
       }
       // else if (mottoCharIndex < mottoText.length) {
       //   setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
@@ -80,15 +80,14 @@ const Home = () => {
 
   // useEffect(() => {
   //   AOS.init({
-  //     duration: 1000, // animation duration in milliseconds
-  //     once: true, // whether animation should only happen once
+  //     duration: 1000, 
+  //     once: true
   //   });
   // }, []);
 
 
   return (
     <div className='d-flex col-12 flex-md-row flex-column content-container'>
-      <i className="fa-regular fa-face-smile-wink fa-bounce"></i>
       <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
         <div className="container">
           <div className="row">

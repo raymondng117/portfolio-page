@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../CSS/Navbar.css'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 
 const Navbar = () => {
-    useEffect(() => {
-        AOS.init({
-          duration: 1000, // animation duration in milliseconds
-          once: true, // whether animation should only happen once
-        });
-      }, []);
+    // useEffect(() => {
+    //     AOS.init({
+    //       duration: 1000,
+    //       once: true
+    //     });
+    //   }, []);
 
     const [navbarVisible, setNavbarVisible] = useState(false);
 
