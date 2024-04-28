@@ -26,6 +26,27 @@ const programmingCodingCardData = [
         liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
         fullCodesLink: "https://github.com/raymondng117/react-todo-app"
     },
+    // Restaurant Review
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/restaurantreviewapp.JPG',
+        backImage: backImagePath,
+        title: "Restaurant Review",
+        technologies: "[C#, ASP.NET(MVC and API modules), JSON, XML, Docker-compose Bootstrap]",
+        description: "An ASP.NET MVC application built with C# allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET API application based on C# as well. Both applications are containerized using Docker.",
+        liveDemoLink: "https://saved-included-reindeer.ngrok-free.app/",
+        fullCodesLink: "https://github.com/raymondng117/restaurantreviewapp"
+    },
+
+     // IntrovertCopilot
+     {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/Introvertcopilot.JPG',
+        backImage: backImagePath,
+        title: "IntroCopilot",
+        technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
+        description: "An life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
+        liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
+        fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
+    },
 
     // Pomodoro clock
     {
@@ -37,18 +58,7 @@ const programmingCodingCardData = [
         liveDemoLink: "https://raymondng117.github.io/pomodoroclock/",
         fullCodesLink: "https://github.com/raymondng117/pomodoroclock"
     },
-
-    // IntrovertCopilot
-    {
-        frontImage: process.env.PUBLIC_URL + '/images/project-previews/Introvertcopilot.JPG',
-        backImage: backImagePath,
-        title: "IntroCopilot",
-        technologies: "[OpenAi API, Express.js, jquery Bootstrap]",
-        description: "An life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
-        liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
-        fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
-    },
-
+   
     // API Random Quotes
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/random-quotes.JPG',
@@ -69,17 +79,6 @@ const programmingCodingCardData = [
         description: "A React-based card game handling cards rendering during matching and dismatching state.",
         liveDemoLink: "https://raymondng117.github.io/flipcards",
         fullCodesLink: "https://github.com/raymondng117/flipcards"
-    },
-
-    // Course Registration
-    {
-        frontImage: "https://th.bing.com/th/id/OIG.6MDhT.IxnRmSvcxdkkCw?pid=ImgGn",
-        backImage: backImagePath,
-        title: "Course Registration",
-        technologies: "[C#, ASP.NET, MySQL Bootstrap]",
-        description: "An MVC application based on ASP.NET CORE written with C# featuring a student registration system that allows users's data modification.",
-        liveDemoLink: null,
-        fullCodesLink: "https://github.com/raymondng117/courseRegistration"
     },
 
     // Wanderland RPG 

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../CSS/Home.css'
 import { useNavigate } from "react-router-dom";
-import { HiOutlinePaperAirplane } from "react-icons/hi2";
 import { GiShipWheel } from "react-icons/gi";
 // import AOS from 'aos';
 // import 'aos/dist/aos.css';
@@ -52,7 +51,7 @@ const Home = () => {
         introChar2Index++;
       } else {
         setTypedText(true)
-        setTimeout(moveArrowColumn, 1000);
+        // setTimeout(moveArrowColumn, 1000);
       }
       // else if (mottoCharIndex < mottoText.length) {
       //   setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
@@ -68,13 +67,13 @@ const Home = () => {
       //   japaneseCharIndex++;
       // } else {
       //   clearInterval(interval);
-        
+
       // }
     }, 55);
 
     return () => {
       clearInterval(interval);
-      
+
     };
 
   }, []);
@@ -89,10 +88,10 @@ const Home = () => {
 
   return (
     <div className='d-flex col-12 flex-md-row flex-column content-container'>
-
+      <i className="fa-regular fa-face-smile-wink fa-bounce"></i>
       <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
         <div className="container">
-          <div className="row"> 
+          <div className="row">
             <div className='col-12 text-start'>
               <h1 className="display-5 fw-bolder my-5">
                 {currentIntroText.replace("undefined", "")}
@@ -100,7 +99,7 @@ const Home = () => {
               <h1 className="display-5 fw-bolder my-5">
                 {currentIntroText2.replace("undefined", "")}
               </h1>
-              {typedText ? <h1><i className="fa-regular fa-face-smile-wink fa-bounce"></i></h1>  : null}
+              {typedText ? <h1><i className="fa-regular fa-face-smile-wink fa-bounce"></i></h1> : null}
             </div>
           </div>
         </div>
