@@ -7,7 +7,7 @@ const Resume = () => {
     "--Web Development & Internet Applications Diploma in Algonquin College, Ottawa",
     "Dean's Honours List:",
     // 3
-    "GPA 3.94/4.0",
+    "GPA 3.95/4.0",
 
     "--Master of Arts in Journalism from The Chinese University of Hong Kong",
     "--Bachelor of Social Science from City University of Hong Kong",
@@ -19,7 +19,7 @@ const Resume = () => {
     // 8
     "React.js",
     "Express.js",
-    "SQL",
+    "MySQL",
     "C#",
     "Bootstrap",
     "Docker",
