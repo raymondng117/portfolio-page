@@ -32,7 +32,7 @@ const programmingCodingCardData = [
         backImage: backImagePath,
         title: "Restaurant Review",
         technologies: "[C#, ASP.NET(MVC and API modules), JSON, XML, Docker, Ngrok, Bootstrap]",
-        description: "An ASP.NET MVC application built with C# allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET API application based on C# as well. Both applications are containerized using Docker.",
+        description: "An C#-based MVC application allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET C#-based API application. Both applications are containerized using Docker.",
         liveDemoLink: "https://saved-included-reindeer.ngrok-free.app/",
         fullCodesLink: "https://github.com/raymondng117/restaurantreviewapp"
     },
@@ -138,8 +138,8 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
             </div>
             <div className="back" style={{ backgroundImage: `url(${backImage})` }}>
                 <div className="inner back-inner-small-screen">
-                    <div className="description-row mb-3">
-                        <p className='text-start'>{description}</p>
+                    <div className="description-row mb-4">
+                        <p className='text-start fs-6'>{description}</p>
                     </div>
                     <div className="links-row d-flex align-items-center">
                         <div className='d-flex link-buttons-flex justify-content-around align-items-center'>
