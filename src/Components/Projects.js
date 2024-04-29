@@ -88,8 +88,8 @@ const programmingCodingCardData = [
         title: "Wanderland RPG",
         technologies: "[Angular, Angular-route, Angular-animate]",
         description: "An Angular-based app rendering an interface of RPG adventure game.",
-        liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737%3A1651&mode=design&t=2KDujAU8zJ96nrms-1",
-        fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737%3A1651&mode=design&t=2KDujAU8zJ96nrms-1"
+        liveDemoLink: "https://raymondng117.github.io/wanderlandRPG/",
+        fullCodesLink: "https://github.com/raymondng117/wanderlandRPG"
     },
 
     // calcualtor
@@ -112,7 +112,7 @@ const designCardData = [
         title: "Wander World",
         technologies: "[Figma, Components, Prototyping, Auto-Layout]",
         description: "An Figma project featuring a travel agency site with customized components and interactive elements",
-        liveDemoLink: null,
+        liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design",
         fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
     },
     {
@@ -121,7 +121,7 @@ const designCardData = [
         title: "Slothrill",
         technologies: "[Adobe illustrator, Layers, Image tracking, Selcetion tool]",
         description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
-        liveDemoLink: null,
+        liveDemoLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link",
         fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"
     }
 ];
