@@ -88,8 +88,8 @@ const programmingCodingCardData = [
         title: "Wanderland RPG",
         technologies: "[Angular, Angular-route, Angular-animate]",
         description: "An Angular-based app rendering an interface of RPG adventure game.",
-        liveDemoLink: "https://raymondng117.github.io/wanderlandRPG/",
-        fullCodesLink: "https://github.com/raymondng117/wanderlandRPG"
+        liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737%3A1651&mode=design&t=2KDujAU8zJ96nrms-1",
+        fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737%3A1651&mode=design&t=2KDujAU8zJ96nrms-1"
     },
 
     // calcualtor
