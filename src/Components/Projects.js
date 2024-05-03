@@ -4,7 +4,7 @@ import '../CSS/Projects.css';
 
 const backImagePath = process.env.PUBLIC_URL + '/images/project-previews/filping-back-img-backgroundcolor.JPG'
 
-const programmingCodingCardData = [
+const fullStackProjectsCardData = [
     // portfolio page
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/portfolio.JPG',
@@ -48,6 +48,31 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
     },
 
+    
+];
+
+const designCardData = [
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/figma.png',
+        backImage: backImagePath,
+        title: "Wander World",
+        technologies: "[Figma, Components, Prototyping, Auto-Layout]",
+        description: "An Figma project featuring a travel agency site with customized components and interactive elements",
+        liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design",
+        fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
+    },
+    {
+        frontImage: process.env.PUBLIC_URL + '/images/design1.png',
+        backImage: backImagePath,
+        title: "Slothrill",
+        technologies: "[Adobe illustrator, Layers, Image tracking, Selcetion tool]",
+        description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
+        liveDemoLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link",
+        fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"
+    }
+];
+
+const sideProjectsCardData = [
     // Pomodoro clock
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/pomodoroclock.JPG',
@@ -103,28 +128,7 @@ const programmingCodingCardData = [
         fullCodesLink: "https://github.com/raymondng117/freeCodeCamp_calculator"
     },
 
-];
-
-const designCardData = [
-    {
-        frontImage: process.env.PUBLIC_URL + '/images/project-previews/figma.png',
-        backImage: backImagePath,
-        title: "Wander World",
-        technologies: "[Figma, Components, Prototyping, Auto-Layout]",
-        description: "An Figma project featuring a travel agency site with customized components and interactive elements",
-        liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design",
-        fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
-    },
-    {
-        frontImage: process.env.PUBLIC_URL + '/images/design1.png',
-        backImage: backImagePath,
-        title: "Slothrill",
-        technologies: "[Adobe illustrator, Layers, Image tracking, Selcetion tool]",
-        description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
-        liveDemoLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link",
-        fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"
-    }
-];
+]
 
 
 const ParallaxCard = ({ frontImage, backImage, title, technologies, description, liveDemoLink, fullCodesLink }) => (
@@ -153,12 +157,12 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
     </div>
 );
 
-const ProgrammingCodingCards = () => (
+const FullStackProjectsCards = () => (
     <div className="projects-wrapper p-2">
-        <div className='my-5 display-6 text-center'>Programming Projects</div>
+        <div className='my-5 display-6 text-center'>Full-Stack Projects</div>
         <hr />
         <div className="projects-cols">
-            {programmingCodingCardData.map((card, index) => (
+            {fullStackProjectsCardData.map((card, index) => (
                 <ParallaxCard
                     key={index}
                     frontImage={card.frontImage}
@@ -195,11 +199,33 @@ const DesignCards = () => (
     </div>
 );
 
+const SideProjectsCards = () => (
+    <div className="projects-wrapper p-2 my-5">
+        <div className='my-5 display-6 text-center'>Side Projects</div>
+        <hr />
+        <div className="projects-cols">
+            {sideProjectsCardData.map((card, index) => (
+                <ParallaxCard
+                    key={index}
+                    frontImage={card.frontImage}
+                    backImage={card.backImage}
+                    title={card.title}
+                    technologies={card.technologies}
+                    description={card.description}
+                    liveDemoLink={card.liveDemoLink}
+                    fullCodesLink={card.fullCodesLink}
+                />
+            ))}
+        </div>
+    </div>
+);
+
 const Projects = () => {
     return (
         <>
-            <ProgrammingCodingCards />
+            <FullStackProjectsCards />
             <DesignCards />
+            <SideProjectsCards />
         </>
     );
 }
