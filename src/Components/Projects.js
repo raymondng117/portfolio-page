@@ -4,18 +4,7 @@ import '../CSS/Projects.css';
 
 const backImagePath = process.env.PUBLIC_URL + '/images/project-previews/filping-back-img-backgroundcolor.JPG'
 
-const fullStackProjectsCardData = [
-    // portfolio page
-    {
-        frontImage: process.env.PUBLIC_URL + '/images/project-previews/portfolio.JPG',
-        backImage: backImagePath, 
-        title: "Portfolio website",
-        technologies: "[React.js, React Router, Anime.js, MongoDB]",
-        description: "An React-based app with employments of react-router for page navigation, advanced CSS for animation and MongoDB to store client's message.",
-        liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
-        fullCodesLink: "https://github.com/raymondng117/portfolio-page"
-    },
-
+const fullStackProjectsCardData = [   
     // todoapp
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/todoapp.JPG',
@@ -26,6 +15,30 @@ const fullStackProjectsCardData = [
         liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
         fullCodesLink: "https://github.com/raymondng117/react-todo-app"
     },
+
+    
+     // Crafthub 
+     {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/crafthub.JPG',
+        backImage: backImagePath, 
+        title: "Craft Hub",
+        technologies: "[Django, MySQL, Ngrok, Bootstrap]",
+        description: "A data-driven Python Django application featuring an e-commerce website where users can register, log in, shop for crafts, and checkout, with persistent data stored on a remote MySQL server",
+        liveDemoLink: "https://terribly-content-mako.ngrok-free.app/",
+        fullCodesLink: "https://github.com/raymondng117/crafthub"
+    },
+
+     // portfolio page
+     {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/portfolio.JPG',
+        backImage: backImagePath, 
+        title: "Portfolio website",
+        technologies: "[React.js, React Router, Anime.js, MongoDB]",
+        description: "An React-based app with employments of react-router for page navigation, advanced CSS for animation and MongoDB to store client's message.",
+        liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
+        fullCodesLink: "https://github.com/raymondng117/portfolio-page"
+    },
+
     // Restaurant Review
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/restaurantreviewapp.JPG',
