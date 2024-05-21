@@ -34,7 +34,7 @@ const fullStackProjectsCardData = [
         backImage: backImagePath, 
         title: "Portfolio website",
         technologies: "[React.js, React Router, Anime.js, MongoDB]",
-        description: "An React-based app with employments of react-router for page navigation, advanced CSS for animation and MongoDB to store client's message.",
+        description: "A React-based app with employments of react-router for page navigation, advanced CSS for animation and MongoDB to store client's message.",
         liveDemoLink: "https://raymondng117.github.io/portfolio-page/",
         fullCodesLink: "https://github.com/raymondng117/portfolio-page"
     },
@@ -45,7 +45,7 @@ const fullStackProjectsCardData = [
         backImage: backImagePath,
         title: "Restaurant Review",
         technologies: "[C#, ASP.NET(MVC and API modules), JSON, XML, Docker, Ngrok, Bootstrap]",
-        description: "An C#-based MVC application allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET C#-based API application. Both applications are containerized using Docker.",
+        description: "A C#-based MVC application allows users to perform CRUD operations on a XML file containing restaurant review models via another ASP.NET C#-based API application. Both applications are containerized using Docker.",
         liveDemoLink: "https://saved-included-reindeer.ngrok-free.app/",
         fullCodesLink: "https://github.com/raymondng117/restaurantreviewapp"
     },
@@ -56,7 +56,7 @@ const fullStackProjectsCardData = [
         backImage: backImagePath,
         title: "IntroCopilot",
         technologies: "[OpenAi API, Express.js, Jquery, Bootstrap]",
-        description: "An life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
+        description: "A life-like business application based on fundamental CSS and JavaScript offering social introverts with AI-generated chat suggested examples for specific scenarios.",
         liveDemoLink: "https://raymondng117.github.io/introvertcopilot/",
         fullCodesLink: "https://github.com/raymondng117/introvertcopilot"
     },
@@ -70,7 +70,7 @@ const designCardData = [
         backImage: backImagePath,
         title: "Wander World",
         technologies: "[Figma, Components, Prototyping, Auto-Layout]",
-        description: "An Figma project featuring a travel agency site with customized components and interactive elements",
+        description: "A Figma project featuring a travel agency site with customized components and interactive elements",
         liveDemoLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design",
         fullCodesLink: "https://www.figma.com/file/ZPtFbXJngR0s4yCepppOOH/Part1%3AWireframes?type=design&node-id=737-1651&mode=design&t=sdt1ezf0vsGjbfHk-0"
     },
