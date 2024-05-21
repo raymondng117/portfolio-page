@@ -11,7 +11,7 @@ const fullStackProjectsCardData = [
         backImage: backImagePath,
         title: "ToDoApp",
         technologies: "[React.js, Express.js, Restful API, MySQL, Docker, Ngrok]",
-        description: "An React-based app featuring a full-stack To-Do applictaion where users can register, login and edit. The backend part including Restful API and MySQL is held using Docker container.",
+        description: "A React-based app featuring a full-stack To-Do applictaion where users can register, login and edit. The backend part including Restful API and MySQL is held using Docker container.",
         liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
         fullCodesLink: "https://github.com/raymondng117/react-todo-app"
     },
