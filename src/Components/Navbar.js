@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../CSS/Navbar.css'
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
 
 const Navbar = () => {
-    // useEffect(() => {
-    //     AOS.init({
-    //       duration: 1000,
-    //       once: true
-    //     });
-    //   }, []);
 
     const [navbarVisible, setNavbarVisible] = useState(false);
 
@@ -30,7 +22,7 @@ const Navbar = () => {
         }, 3000);
       
         return () => {
-          clearTimeout(timeoutId); // Clear the timeout if the component unmounts or useEffect runs again
+          clearTimeout(timeoutId); 
         };
     }, [])
 

@@ -8,7 +8,6 @@ const Contact = () => {
     const [sendingMsg, setSendingMsg] = useState(false);
     const [showErrMsg, setShowErrMsg] = useState(false);
 
-
     const validateForm = (toggle) => {
         if (!anim && !isSending) {
             toggle

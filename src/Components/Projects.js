@@ -5,6 +5,15 @@ import '../CSS/Projects.css';
 const backImagePath = process.env.PUBLIC_URL + '/images/project-previews/filping-back-img-backgroundcolor.JPG'
 
 const fullStackProjectsCardData = [   
+    // ExamPedite
+     {
+        frontImage: process.env.PUBLIC_URL + '/images/project-previews/exampedite.JPG',
+        backImage: backImagePath,
+        title: "ExamPedite",
+        technologies: "[React(Typescript), Express.js, Azure, MongoDB, Openai API assistant, MySQL, Docker, Ngrok]",
+        description: "ExamPedite is an AI-driven application developed using the MERN stack, specifically designed to provide Hong Kong students with professional analyses of past public examination papers, thereby equipping them for academic success.",
+        liveDemoLink: "https://exampedite.azurewebsites.net/"
+    },
     // todoapp
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/todoapp.JPG',
@@ -12,8 +21,7 @@ const fullStackProjectsCardData = [
         title: "ToDoApp",
         technologies: "[React.js, Express.js, Restful API, MySQL, Docker, Ngrok]",
         description: "A React-based app featuring a full-stack To-Do applictaion where users can register, login and edit. The backend part including Restful API and MySQL is held using Docker container.",
-        liveDemoLink: "https://raymondng117.github.io/react-todo-app-static/",
-        fullCodesLink: "https://github.com/raymondng117/react-todo-app"
+        liveDemoLink: "https://github.com/raymondng117/react-todo-app"
     },
 
     
