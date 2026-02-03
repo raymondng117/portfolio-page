@@ -1,106 +1,108 @@
 .nav-bar-container {
-    overflow: hidden;
-    transition: max-height 1.5s ease;
-    border-bottom: #0f2540 solid 10px;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.navbar {
-    padding-left: 2%;
-    padding-right: 2%;
-    background-color: #0f2540 !important;
-}
-
-.navbar-visible {
-    max-height: 500px;
-}
-
-.navbar-hidden {
-    max-height: 0;
-}
-
-.nav-link {
-    color: white !important;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 2px;
-    border-bottom: 2px solid transparent;
+.glass-nav {
+    background: rgba(15, 37, 64, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
     transition: all 0.3s ease;
 }
 
-
-
-.nav-link:hover::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 100%;
-    border-bottom: 2px solid #8e8e9f;
-}
-
-.navbar-toggler {
-    border: gray solid 2px !important;
-}
-
-.navbar-toggler:hover {
-    opacity: 0.5;
-    background-color: #2E5C6E;
-}
-
 .navbar-brand {
+    font-family: 'Poppins', sans-serif !important;
     font-weight: 700 !important;
-    font-size: 48px !important;
-    display: flex !important;
-    align-items: center !important;
+    letter-spacing: 1px;
 }
 
+.brand-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo-container {
+    position: relative;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, #00fdff, #f093fb);
+}
 
 .icon-logo {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     border-radius: 50%;
+    display: block;
+    border: 2px solid #0f2540;
 }
 
 .nav-item {
-    margin-left: 40px;
-    font-weight: lighter;
+    margin: 0 10px;
 }
 
-#navbarSupportedContent {
-    background-color: #0f2540 !important;
+.nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-weight: 500 !important;
+    font-size: 0.9rem !important;
+    letter-spacing: 1px;
+    padding: 8px 16px !important;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
-.navbar-nav a {
-    font-size: 18px !important;
-    font-weight: 600 !important;
+.nav-link:hover, .nav-link.active {
+    color: #fff !important;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 15px rgba(0, 253, 255, 0.1);
 }
 
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #00fdff, #f093fb);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
 
-@media (max-width:1024px) {
-    .navbar-hidden {
-        max-height: 10%;
-    }
+.nav-link:hover::before, .nav-link.active::before {
+    width: 80%;
+}
 
-    .nav-link:hover {
-        background-color: #2E5C6E !important;
-    }
+.navbar-toggler {
+    border: none !important;
+    padding: 0;
+}
 
-    .nav-link:hover::after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: -2px;
-        width: 100%;
-        border-bottom: none;
-    }
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
 
-    .nav-bar-container ul,
-    .nav-bar-container li {
-        text-align: center;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background: rgba(15, 37, 64, 0.95);
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 15px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
     }
 
     .nav-item {
-        margin: 0;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
     }
 }

@@ -6,6 +6,7 @@ import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import Resume from './Components/Resume';
 import Testing from './Components/Testing';
+import './App.css';
 
 function App() {
   return (

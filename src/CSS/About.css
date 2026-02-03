@@ -1,114 +1,253 @@
-.body {
-    background-color: #1B3040; 
+.about-container-fluid {
+    background: radial-gradient(circle at center, #1B3040 0%, #0f2540 100%);
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+    overflow-x: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
-.outside-container {
-    background-color: #1B3040;
-    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+.about-container-fluid.visible {
+    opacity: 1;
 }
 
-.main-container {
-    background-color: #1B3040;
-}
-
-.about-thumbnail-column {
-    max-height: 70% !important;
-}
-
-.profile-contact-column {
-    height: 100% !important;
-}
-
-.about-content-column {
-    height: 100% !important;
-    background-color: #1B3040;
-    height: 100vh;
-}
-
-.about-thumbnail {
-    display: block;
-}
-
-.btn-about {
-    margin-top: 2px;
-    margin-bottom: 2px;
-    cursor: default !important;
-}
-
-.btn-about div {
-    background-color: transparent;
-}
-
-.btn-about div img,
-.btn-about div p {
-    background-color: transparent;
-}
-
-
-@media (max-width: 1400px) {
-    .about-thumbnail {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-
-
-@media (max-width: 993px) {
-    .about-thumbnail {
-        display: block;
-        width: 50%;
-        height: 50%;
-    }
-}
-
-.wave {
-    width: 1400px;
-    height: 1200px;
+/* Background Animation */
+.about-container-fluid::before {
+    content: '';
     position: absolute;
-    top: -25%;
-    left: 50%;
-    margin-left: -200px;
-    margin-top: 300px;
-    border-radius: 35%;
-    background: #accbee;
-    opacity: 0.2;
-    animation: wave 15s infinite linear;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 50% 50%, rgba(0, 253, 255, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.05) 0%, transparent 30%);
+    animation: rotateBg 30s linear infinite;
+    pointer-events: none;
 }
 
-@keyframes wave {
-    from {
-        transform: rotate(0deg);
+@keyframes rotateBg {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.custom-container {
+    max-width: 1200px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Shared Glass Panel */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideUp 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.glass-panel:hover {
+    box-shadow: 0 12px 40px rgba(0, 253, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Profile Card Styling */
+.profile-card {
+    text-align: center;
+    position: sticky;
+    top: 100px;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 253, 255, 0.3);
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    transition: all 0.5s ease;
+}
+
+.profile-card:hover .profile-img {
+    border-color: #00fdff;
+    transform: scale(1.05);
+}
+
+.profile-badge {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(15, 37, 64, 0.9);
+    padding: 5px 12px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.profile-name {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.profile-title {
+    color: #00fdff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.social-btn:hover {
+    background: #00fdff;
+    color: #0f2540;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 253, 255, 0.3);
+}
+
+/* Header Styling */
+.gradient-text {
+    background: linear-gradient(135deg, #00fdff 0%, #f093fb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.header-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #00fdff, #f093fb);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+/* About Content Styling */
+.bio-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.highlight-text {
+    color: #00fdff;
+    font-weight: 600;
+}
+
+.subsection-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-left: 4px solid #f093fb;
+    padding-left: 15px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-badge {
+    background: rgba(0, 253, 255, 0.1);
+    border: 1px solid rgba(0, 253, 255, 0.2);
+    color: #00fdff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
+    animation: fadeIn 0.5s ease forwards;
+    opacity: 0;
+}
+
+.skill-badge:hover {
+    background: rgba(0, 253, 255, 0.2);
+    transform: translateY(-2px);
+    border-color: #00fdff;
+}
+
+.skill-badge.soft {
+    background: rgba(240, 147, 251, 0.1);
+    border-color: rgba(240, 147, 251, 0.2);
+    color: #f093fb;
+}
+
+.skill-badge.soft:hover {
+    background: rgba(240, 147, 251, 0.2);
+    border-color: #f093fb;
+}
+
+/* Animations */
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    from {
-        transform: rotate(360deg);
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 
-@media (max-width:768px) {
-    .wave {
-        width: 1200px;
-        height: 1000px;
-        position: absolute;
-        top: 5%;
-        left: 80%;
-        margin-left: -200px;
-        margin-top: 300px;
-        border-radius: 35%;
-        background: #accbee;
-        opacity: 0.2;
-        animation: wave 15s infinite linear;
-        overflow: hidden;
+/* Responsive */
+@media (max-width: 991px) {
+    .profile-card {
+        margin-bottom: 2rem;
+        position: static;
+    }
+    
+    .about-container-fluid {
+        padding-top: 80px;
     }
 }
 
-.about-p {
-    line-height: 2 !important;
+@media (max-width: 576px) {
+    .glass-panel {
+        padding: 1.5rem;
+    }
+    
+    .skills-grid {
+        justify-content: flex-start;
+    }
 }
 
-.btn-about {
-    font-weight: 700 !important;
-    border-width: 3px;
-}

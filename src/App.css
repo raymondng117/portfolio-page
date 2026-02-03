@@ -1,0 +1,67 @@
+/* App-level styles */
+.App {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Page transition effect */
+.App > div {
+    animation: pageTransition 0.5s ease-out;
+}
+
+@keyframes pageTransition {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Selection styling */
+::selection {
+    background: rgba(0, 253, 255, 0.3);
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: rgba(0, 253, 255, 0.3);
+    color: #ffffff;
+}
+
+/* Focus outline for accessibility */
+*:focus-visible {
+    outline: 2px solid rgba(0, 253, 255, 0.5);
+    outline-offset: 2px;
+}
+
+/* Smooth image loading */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[loading] {
+    opacity: 0;
+}
+
+img:not([loading]) {
+    opacity: 1;
+}
+
+/* Link styles */
+a {
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Button base styles */
+button {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button:active {
+    transform: scale(0.98);
+}

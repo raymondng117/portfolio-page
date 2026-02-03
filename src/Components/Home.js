@@ -1,118 +1,46 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../CSS/Home.css'
 import { useNavigate } from "react-router-dom";
-import { GiShipWheel } from "react-icons/gi";
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
-
 
 const Home = () => {
+    const navigate = useNavigate();
 
-  const [typedText, setTypedText] = useState(false)
-  const [currentIntroText, setCurrentIntroText] = useState('');
-  const [currentIntroText2, setCurrentIntroText2] = useState('')
-  const [currentMottoText, setCurrentMottoText] = useState('');
-  const [currentQuoteText, setCurrentQuoteText] = useState('');
-  const [currentJapaneseMottoText, setCurrentJapaneseMottoText] = useState('');
-  const [currentJapaneseText, setCurrentJapaneseText] = useState('');
-  const navigate = useNavigate();
-  const [moved, setMoved] = useState(false);
+    return (
+        <div className='content-container home-page'>
+            {/* Main Content */}
+            <div className='home-page-bg d-flex justify-content-center align-items-center'>
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <div className='col-lg-10 text-center hero-content'>
+                            
+                            <h1 className="display-3 fw-bold mb-3 hero-title">
+                                Hi, I'm <span className="gradient-text">Raymond Ng</span>
+                            </h1>
+                            
+                            <h2 className="display-6 fw-normal mb-4 hero-subtitle">
+                                Full-Stack Web Developer
+                            </h2>
+                            
+                            <p className="lead hero-text mb-5 mx-auto">
+                                Building accessible, pixel-perfect, and performant web experiences.
+                                Passionate about turning complex problems into simple, beautiful solutions.
+                            </p>
 
-  const introText = '  This is Raymond Ng!';
-  const introText2 = ' Welcome to my portfolio page!';
-  const mottoText = ' "What you desperately learn becomes your talent."';
-  const quoteText = '  --FULLMETAL ALCHEMIST';
-  const japaneseMottoText = '  "自分が必死に学習したことが才能になる"';
-  const japaneseText = '  --鋼の錬金術師';
-
-  let introCharIndex = 0;
-  let introChar2Index = 0;
-  let mottoCharIndex = 0;
-  let quoteCharIndex = 0;
-  let japaneseMottoCharIndex = 0;
-  let japaneseCharIndex = 0;
-  let interval;
-
-  const moveArrowColumn = () => {
-    setMoved(true);
-    setTimeout(() => {
-      navigate('/about');
-    }, 600);
-  };
-
-
-  useEffect(() => {
-    interval = setInterval(() => {
-      if (introCharIndex < introText.length) {
-        setCurrentIntroText((prevText) => prevText + introText[introCharIndex]);
-        introCharIndex++;
-      } else if (introChar2Index < introText2.length) {
-        setCurrentIntroText2((prevText) => prevText + introText2[introChar2Index]);
-        introChar2Index++;
-      } else {
-        setTypedText(true)
-        setTimeout(moveArrowColumn, 1000);
-      }
-      // else if (mottoCharIndex < mottoText.length) {
-      //   setCurrentMottoText((prevText) => prevText + mottoText[mottoCharIndex]);
-      //   mottoCharIndex++;
-      // } else if (quoteCharIndex < quoteText.length) {
-      //   setCurrentQuoteText((prevText) => prevText + quoteText[quoteCharIndex]);
-      //   quoteCharIndex++;
-      // } else if (japaneseMottoCharIndex < japaneseMottoText.length) {
-      //   setCurrentJapaneseMottoText((prevText) => prevText + japaneseMottoText[japaneseMottoCharIndex]);
-      //   japaneseMottoCharIndex++;
-      // } else if (japaneseCharIndex < japaneseText.length) {
-      //   setCurrentJapaneseText((prevText) => prevText + japaneseText[japaneseCharIndex]);
-      //   japaneseCharIndex++;
-      // } else {
-      //   clearInterval(interval);
-
-      // }
-    }, 55);
-
-    return () => {
-      clearInterval(interval);
-
-    };
-
-  }, []);
-
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 1000, 
-  //     once: true
-  //   });
-  // }, []);
-
-
-  return (
-    <div className='d-flex col-12 flex-md-row flex-column content-container home-page'>
-      <div className='home-page-bg col-md-10 d-flex justify-content-center align-items-center'>
-        <div className="container">
-          <div className="row">
-            <div className='col-12 text-start'>
-              <h1 className="display-5 fw-bolder my-5">
-                {currentIntroText.replace("undefined", "")}
-              </h1>
-              <h1 className="display-5 fw-bolder my-5">
-                {currentIntroText2.replace("undefined", "")}
-              </h1>
-              {typedText ? <h1><i className="fa-regular fa-face-smile-wink fa-bounce"></i></h1> : null}
+                            <div className="d-flex justify-content-center gap-3 hero-buttons">
+                                <button className="btn-modern primary" onClick={() => navigate('/projects')}>
+                                    View Projects
+                                </button>
+                                <button className="btn-modern secondary" onClick={() => navigate('/contact')}>
+                                    Contact Me
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+            {/* Navigation Arrow Removed */}
         </div>
-      </div>
-
-      <div className='arrow-column-bg col-md-1'></div>
-
-      <div className={`arrow-column d-flex col-sm-5  col-12 col-md-1 justify-content-center align-items-center text-center ${moved ? 'moved' : ''}`} onClick={moveArrowColumn}>
-        <GiShipWheel className='arrow-img' />
-      </div>
-
-      <div className='blank-column-bg col-md-1'></div>
-    </div>
-  );
+    );
 }
 
 export default Home;

@@ -10,16 +10,16 @@ const fullStackProjectsCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/exampedite.JPG',
         backImage: backImagePath,
         title: "ExamPedite",
-        technologies: "[React(Typescript), Express.js, Azure, MongoDB, Openai API assistant, MySQL, Docker, Ngrok]",
+        technologies: "[React(Typescript), Express.js, Google Cloud Platform, MongoDB, Docker, Cloudflare Workers]",
         description: "ExamPedite is an AI-driven application developed using the MERN stack, specifically designed to provide Hong Kong students with professional analyses of past public examination papers, thereby equipping them for academic success.",
-        liveDemoLink: "https://exampedite.azurewebsites.net/"
+        liveDemoLink: "https://ai.exampedite.org/"
     },
     // todoapp
     {
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/todoapp.JPG',
         backImage: backImagePath,
         title: "ToDoApp",
-        technologies: "[React.js, Express.js, Restful API, MySQL, Docker, Ngrok]",
+        technologies: "[React.js, Express.js, Restful API, MySQL, Docker]",
         description: "A React-based app featuring a full-stack To-Do applictaion where users can register, login and edit. The backend part including Restful API and MySQL is held using Docker container.",
         liveDemoLink: "https://github.com/raymondng117/react-todo-app"
     },
@@ -30,7 +30,7 @@ const fullStackProjectsCardData = [
         frontImage: process.env.PUBLIC_URL + '/images/project-previews/crafthub.JPG',
         backImage: backImagePath, 
         title: "Craft Hub",
-        technologies: "[Django, MySQL, Ngrok, Bootstrap]",
+        technologies: "[Django, MySQL, Bootstrap]",
         description: "A data-driven Python Django application featuring an e-commerce website where users can register, log in, shop for crafts, and checkout, with persistent data stored on a remote MySQL server",
         liveDemoLink: "https://terribly-content-mako.ngrok-free.app/",
         fullCodesLink: "https://github.com/raymondng117/crafthub"
@@ -88,8 +88,8 @@ const designCardData = [
         title: "Slothrill",
         technologies: "[Adobe illustrator, Layers, Image tracking, Selcetion tool]",
         description: "An individual project utilizing Adobe illustrator built-in features such as Image tracking and Selcetion tool.",
-        liveDemoLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link",
-        fullCodesLink: "https://drive.google.com/file/d/1quONhk-uH497rYbovkR1VTGRTmBy2OHV/view?usp=drive_link"
+        liveDemoLink: "https://drive.google.com/file/d/1iGPnmgC-91whVSqoEjYpkEc6D9Hnv3oY/view?usp=sharing",
+        fullCodesLink: "https://drive.google.com/file/d/1iGPnmgC-91whVSqoEjYpkEc6D9Hnv3oY/view?usp=sharing"
     }
 ];
 
@@ -179,7 +179,7 @@ const ParallaxCard = ({ frontImage, backImage, title, technologies, description,
 );
 
 const FullStackProjectsCards = () => (
-    <div className="projects-wrapper p-2">
+    <div className="projects-wrapper p-2 mt-5">
         <div className='my-5 display-6 text-center'>Full-Stack Projects</div>
         <hr />
         <div className="projects-cols">
