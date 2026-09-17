@@ -202,6 +202,38 @@
     line-height: 1.5;
   }
 
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 20px;
+    font-size: 17px;
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+
+  .contact-info-item:hover {
+    color: white;
+    border-color: rgba(0, 253, 255, 0.5);
+    box-shadow: 0 0 20px rgba(0, 253, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-2px);
+  }
+
+  .contact-icon {
+    font-size: 22px;
+  }
+
   #errMsg {
     padding: 15px;
     border-radius: 12px;

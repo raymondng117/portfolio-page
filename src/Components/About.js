@@ -9,9 +9,10 @@ const About = () => {
     }, []);
 
     const skills = [
-        "JavaScript (ES6+)", "React.js", "Node.js", "Python", 
-        "HTML5 & CSS3", "Bootstrap", "SQL", "Git/GitHub", 
-        "RESTful APIs", "Unreal Engine"
+        "TypeScript / React", "Node.js / Express", "MongoDB",
+        "OpenAI / Claude / Gemini SDKs", "Agent Orchestration & MCP",
+        "Cloudflare Workers & Durable Objects", "Docker & Docker Compose",
+        "GCP / Azure", "GitHub Actions CI/CD", "Playwright / Mocha / Chai"
     ];
 
     const softSkills = [
@@ -37,9 +38,6 @@ const About = () => {
                                     alt="Yu Wing Ng"
                                     className="profile-img"
                                 />
-                                <div className="profile-badge">
-                                    <span className="location-emoji">📍</span> Canada
-                                </div>
                             </div>
                             
                             <h3 className="profile-name mt-4">Yu Wing Ng</h3>
@@ -81,7 +79,7 @@ const About = () => {
                             </div>
 
                             <div className="skills-section mb-4">
-                                <h3 className="subsection-title mb-3">Technical Arsenal</h3>
+                                <h3 className="subsection-title mb-3">Tech Stack</h3>
                                 <div className="skills-grid">
                                     {skills.map((skill, index) => (
                                         <div key={index} className="skill-badge" style={{animationDelay: `${0.1 * index}s`}}>
